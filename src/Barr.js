@@ -86,7 +86,7 @@ function Barr() {
   
           {/* BACK */}
           <div className='text-container'>
-            <a className='link work-paragraph-text amikoBold' href='/'>
+            <a className='link work-paragraph-text amikoBold' href={`${process.env.PUBLIC_URL}/`}>
               BACK
             </a>
           </div>
