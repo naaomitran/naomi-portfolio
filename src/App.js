@@ -37,7 +37,7 @@ function App() {
         <Route path="/coming-soon" element={<ComingSoon />} />
 
 
-        <Route path="/" element={<Home/>} exact />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home/>} exact />
       </Routes>
 
     </Router>
