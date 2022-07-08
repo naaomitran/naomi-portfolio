@@ -1,34 +1,34 @@
 import React, { useEffect } from 'react'
 
-import '../Style.css'
-import snack from '../assets/snackHeader.png'
+import './Style.css'
+import snack from './assets/snackHeader.png'
 
-import share1 from '../assets/snack-share1.png'
-import share2 from '../assets/snack-share2.png'
+import share1 from './assets/snack-share1.png'
+import share2 from './assets/snack-share2.png'
 
-import interest1 from '../assets/snack-interest1.png'
-import interest2 from '../assets/snack-interest2.png'
+import interest1 from './assets/snack-interest1.png'
+import interest2 from './assets/snack-interest2.png'
 
-import website from '../assets/website-update copy.mov'
+import website from './assets/website-update copy.mov'
 
-import countryPicker1 from '../assets/country list.png'
-import countryPicker2 from '../assets/country picker.png'
+import countryPicker1 from './assets/country list.png'
+import countryPicker2 from './assets/country picker.png'
 
-import videobar1 from '../assets/videobar.png'
-import videobar2 from '../assets/videobar2.png'
+import videobar1 from './assets/videobar.png'
+import videobar2 from './assets/videobar2.png'
 
-import hashtag1 from '../assets/hashtag.png'
-import hashtag2 from '../assets/hashtag2.png'
-import hashtag3 from '../assets/hashtag3.png'
-import hashtag4 from '../assets/hashtag4.png'
+import hashtag1 from './assets/hashtag.png'
+import hashtag2 from './assets/hashtag2.png'
+import hashtag3 from './assets/hashtag3.png'
+import hashtag4 from './assets/hashtag4.png'
 
-import unlock1 from '../assets/unlockALike.png'
-import unlock2 from '../assets/unlockALike2.png'
+import unlock1 from './assets/unlockALike.png'
+import unlock2 from './assets/unlockALike2.png'
 
-import email from '../assets/Email.png'
-import phone from '../assets/phone.png'
-import linkedin from '../assets/linkedin.png'
-import github from '../assets/github.png'
+import email from './assets/Email.png'
+import phone from './assets/phone.png'
+import linkedin from './assets/linkedin.png'
+import github from './assets/github.png'
 
 
 

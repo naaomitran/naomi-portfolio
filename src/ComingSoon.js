@@ -1,10 +1,10 @@
-import '../Style.css'
+import './Style.css'
 
-import arrowOutline from '../assets/arrow-outline.png'
-import snack from '../assets/snackBanner.png'
-import ncis from '../assets/ncisBanner.png'
-import barrtech from '../assets/barrtechBanner.png'
-import projects from '../assets/personalProjectsBanner.png'
+import arrowOutline from './assets/arrow-outline.png'
+import snack from './assets/snackBanner.png'
+import ncis from './assets/ncisBanner.png'
+import barrtech from './assets/barrtechBanner.png'
+import projects from './assets/personalProjectsBanner.png'
 
 import { Link } from 'react-router';
 import React, { useEffect } from 'react'

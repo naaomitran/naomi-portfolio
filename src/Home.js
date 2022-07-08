@@ -51,16 +51,16 @@ function Home() {
           </p>
         </div>
         <div style={{alignItems: "center"}}>
-          <a href={`${process.env.PUBLIC_URL}/pages/snack`}>
+          <a href='/snack'>
           <img src={snack} className="work-banner" alt="snack" />
           </a>
-          <a href={`${process.env.PUBLIC_URL}/pages/coming-soon`}>
+          <a href={`${process.env.PUBLIC_URL}/coming-soon`}>
           <img src={ncis} className="work-banner" alt="ncis" />
           </a>
-          <a href={`${process.env.PUBLIC_URL}/pages/barrtech-mechanical`}>
+          <a href={`${process.env.PUBLIC_URL}/barrtech-mechanical`}>
           <img src={barrtech} className="work-banner" alt="barrtech" />
           </a>
-          <a href={`${process.env.PUBLIC_URL}/pages/coming-soon`}>
+          <a href={`${process.env.PUBLIC_URL}/coming-soon`}>
           <img src={projects} className="work-banner" alt="personal-projects" />
           </a>
         </div>

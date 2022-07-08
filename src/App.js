@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home'
-import Snack from './snack/Snack'
-import Barr from './barr/Barr'
+import Snack from './Snack'
+import Barr from './Barr'
 import ComingSoon from './ComingSoon';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 
     <Router>
       <Routes>
-        <Route path={`${process.env.PUBLIC_URL}/pages/snack`} element={<Snack />} exact />
+        <Route path='/snack' element={<Snack />} exact />
         <Route path={`${process.env.PUBLIC_URL}/barrtech-mechanical`} element={<Barr />} />
         <Route path={`${process.env.PUBLIC_URL}/coming-soon`} element={<ComingSoon />} />
         <Route path={`${process.env.PUBLIC_URL}/coming-soon`} element={<ComingSoon />} />
