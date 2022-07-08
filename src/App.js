@@ -12,7 +12,7 @@ function App() {
 
   return (
 
-    <Router>
+    <Router >
       <Routes>
         <Route path='/snack' element={<Snack />} exact />
         <Route path={`${process.env.PUBLIC_URL}/barrtech-mechanical`} element={<Barr />} />
