@@ -1,14 +1,19 @@
-import './Style.css'
-import arrowOutline from './assets/arrow-outline.png'
-import snack from './assets/snackBanner.png'
-import ncis from './assets/ncisBanner.png'
-import barrtech from './assets/barrtechBanner.png'
-import projects from './assets/personalProjectsBanner.png'
+import '../Style.css'
 
-import React from 'react';
+import arrowOutline from '../assets/arrow-outline.png'
+import snack from '../assets/snackBanner.png'
+import ncis from '../assets/ncisBanner.png'
+import barrtech from '../assets/barrtechBanner.png'
+import projects from '../assets/personalProjectsBanner.png'
+
 import { Link } from 'react-router';
+import React, { useEffect } from 'react'
 
 function ComingSoon() {
+  useEffect(() => {
+    document.title = "Coming Soon"
+  }, [])
+  
   return (
     <div className="outer-container" style={{backgroundColor: '#DAF6E0'}}>
       <header className='inner-container'>

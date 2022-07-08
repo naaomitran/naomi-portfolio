@@ -6,7 +6,6 @@ import barrtech from './assets/barrtechBanner.png'
 import projects from './assets/personalProjectsBanner.png'
 
 import React from 'react';
-import { Link } from 'react-router';
 
 function Home() {
   return (
@@ -52,16 +51,16 @@ function Home() {
           </p>
         </div>
         <div style={{alignItems: "center"}}>
-          <a href={`${process.env.PUBLIC_URL}/snack`}>
+          <a href={`${process.env.PUBLIC_URL}/pages/snack`}>
           <img src={snack} className="work-banner" alt="snack" />
           </a>
-          <a href={`${process.env.PUBLIC_URL}/coming-soon`}>
+          <a href={`${process.env.PUBLIC_URL}/pages/coming-soon`}>
           <img src={ncis} className="work-banner" alt="ncis" />
           </a>
-          <a href={`${process.env.PUBLIC_URL}/barrtech-mechanical`}>
+          <a href={`${process.env.PUBLIC_URL}/pages/barrtech-mechanical`}>
           <img src={barrtech} className="work-banner" alt="barrtech" />
           </a>
-          <a href={`${process.env.PUBLIC_URL}/coming-soon`}>
+          <a href={`${process.env.PUBLIC_URL}/pages/coming-soon`}>
           <img src={projects} className="work-banner" alt="personal-projects" />
           </a>
         </div>

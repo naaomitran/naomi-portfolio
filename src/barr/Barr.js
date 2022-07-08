@@ -1,11 +1,17 @@
-import './Style.css'
-import email from './assets/Email.png'
-import phone from './assets/phone.png'
-import linkedin from './assets/linkedin.png'
-import github from './assets/github.png'
-import barr from './assets/barrHeader.png'
+import '../Style.css'
+import React, { useEffect } from 'react'
+
+import email from '../assets/Email.png'
+import phone from '../assets/phone.png'
+import linkedin from '../assets/linkedin.png'
+import github from '../assets/github.png'
+import barr from '../assets/barrHeader.png'
 
 function Barr() {
+  useEffect(() => {
+    document.title = "BARRTECH Mechanical"
+  }, [])
+  
     return (
       <div className="work-outer-container">
         <div style={{alignItems: "center"}}>
