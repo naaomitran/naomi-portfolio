@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/naomi-portfolio/static/css/main.ed61285b.css",
-    "main.js": "/naomi-portfolio/static/js/main.9d50ee3d.js",
+    "main.js": "/naomi-portfolio/static/js/main.0be255cb.js",
     "static/js/787.c40b991c.chunk.js": "/naomi-portfolio/static/js/787.c40b991c.chunk.js",
     "static/media/website-update copy.mov": "/naomi-portfolio/static/media/website-update copy.14ca101a2cffad49b5d9.mov",
     "static/media/snackHeader.png": "/naomi-portfolio/static/media/snackHeader.6791442a5a061d28c41c.png",
@@ -32,11 +32,11 @@
     "static/media/personalProjectsBanner.png": "/naomi-portfolio/static/media/personalProjectsBanner.89b577b25b287dfa9d9b.png",
     "index.html": "/naomi-portfolio/index.html",
     "main.ed61285b.css.map": "/naomi-portfolio/static/css/main.ed61285b.css.map",
-    "main.9d50ee3d.js.map": "/naomi-portfolio/static/js/main.9d50ee3d.js.map",
+    "main.0be255cb.js.map": "/naomi-portfolio/static/js/main.0be255cb.js.map",
     "787.c40b991c.chunk.js.map": "/naomi-portfolio/static/js/787.c40b991c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed61285b.css",
-    "static/js/main.9d50ee3d.js"
+    "static/js/main.0be255cb.js"
   ]
 }
