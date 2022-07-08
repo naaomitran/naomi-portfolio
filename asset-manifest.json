@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.157951ab.css",
-    "main.js": "/static/js/main.80978f8e.js",
+    "main.js": "/static/js/main.88de8351.js",
     "static/js/787.c40b991c.chunk.js": "/static/js/787.c40b991c.chunk.js",
     "static/media/website-update copy.mov": "/static/media/website-update copy.14ca101a2cffad49b5d9.mov",
     "static/media/snackHeader.png": "/static/media/snackHeader.6791442a5a061d28c41c.png",
@@ -25,21 +25,18 @@
     "static/media/hashtag.png": "/static/media/hashtag.465f7f250d5a7e5364ff.png",
     "static/media/videobar2.png": "/static/media/videobar2.0b8443fefa4fe74895ea.png",
     "static/media/barrtechBanner.png": "/static/media/barrtechBanner.e3400361d5693ab4bcb8.png",
-    "static/media/uploadProfile.png": "/static/media/uploadProfile.ef6a712f12832f5d1a40.png",
-    "static/media/uploadProfile3.png": "/static/media/uploadProfile3.949ee6011f4c9ae7e4aa.png",
     "static/media/AbrilFatface-Regular.ttf": "/static/media/AbrilFatface-Regular.c2459f7f69cb5eb788d8.ttf",
-    "static/media/uploadProfile2.png": "/static/media/uploadProfile2.60a5e746f6f8bea87762.png",
     "static/media/snack-interest1.png": "/static/media/snack-interest1.12eaeb796359b78a469c.png",
     "static/media/hashtag4.png": "/static/media/hashtag4.31dcb73e4a1dfff2a5e1.png",
     "static/media/ncisBanner.png": "/static/media/ncisBanner.048f0fa703cdc76237dd.png",
     "static/media/personalProjectsBanner.png": "/static/media/personalProjectsBanner.89b577b25b287dfa9d9b.png",
     "index.html": "/index.html",
     "main.157951ab.css.map": "/static/css/main.157951ab.css.map",
-    "main.80978f8e.js.map": "/static/js/main.80978f8e.js.map",
+    "main.88de8351.js.map": "/static/js/main.88de8351.js.map",
     "787.c40b991c.chunk.js.map": "/static/js/787.c40b991c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.157951ab.css",
-    "static/js/main.80978f8e.js"
+    "static/js/main.88de8351.js"
   ]
 }
