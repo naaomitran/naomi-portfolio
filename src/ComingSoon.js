@@ -29,10 +29,10 @@ function ComingSoon() {
           </p>
         </div>
         <div style={{alignItems: "center"}}>
-          <a href='/snack'>
+          <a href={`${process.env.PUBLIC_URL}/snack`}>
           <img src={snack} className="work-banner" alt="snack" />
           </a>
-          <a href='/barrtech-mechanical'>
+          <a href={`${process.env.PUBLIC_URL}/barrtech-mechanical`}>
           <img src={barrtech} className="work-banner" alt="barrtech" />
           </a>
         </div>
