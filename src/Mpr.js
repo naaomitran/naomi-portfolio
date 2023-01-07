@@ -15,7 +15,7 @@ function Mpr() {
     return (
       <div className="work-outer-container">
         <div style={{alignItems: "center"}}>
-          <img src={mprHeader} alt="snack" className='work-header'/>
+          <img src={mprHeader} alt="mpr" className='work-header'/>
         </div>
         <header className='work-inner-container'>
           <div className='work-text-container'>
@@ -30,7 +30,7 @@ function Mpr() {
           </div>
           <div className='text-container'>
             <p className='work-paragraph-text amikoReg'>
-              <a className='amikoBold'>Mountain Park Resort</a> is a campground & RB park located in Rickson, BC. </p>
+              <a className='amikoBold'>Mountain Park Resort</a> is a campground & RV park located in Rickson, BC. </p>
           </div>
   
           {/* tasks */}

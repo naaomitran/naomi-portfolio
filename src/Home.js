@@ -18,33 +18,23 @@ function Home() {
   return (
     <div className="outer-container">
       <header className='inner-container'>
+        <div className='sub-container'>
         <div className='text-container'>
           <p className='subtitle amikoReg'>
             Hi, I'm
-          </p>
-          <p className='title inline'>
-            NAOMI.
-          </p>
-        </div>
-        <div className='text-container'>
-          <p className='subtitle amikoBold'>
-            I like to 
-            <a className='title outline code'>code,</a>
-            <a className='title outline design'>design,</a>
-          </p>
-        </div>
-        <div className='text-container'>
-          <p className='subtitle amikoBold'>
-            <a className='title outline eat' style={{paddingLeft: "0"}}>eat,</a>
-            and
-            <a className='title outline sweat'>sweat.</a>
+          <a className='title inline'>NAOMI.</a>
+            <br></br>
+            <a className='title outline code'>WEB DEVELOPER.</a><a> </a>
+            <a className='title outline design'>DESIGNER.</a> <a> </a>
+            <a className='title outline sweat'>FOODIE.</a>
           </p>
         </div>
         <div className='text-container'>
           <p className='paragraph-text amikoReg'>
           I'm a designer and developer based in Vancouver, Canada with experience 
           in delivering end-to-end web designs and implementation for responsive web applications and interfaces. 
-          I'm passionate about improving the ease and the looks of anything on the web that people can interact with. 
+          I'm passionate about improving the ease and the looks of anything on the web that people can interact with. <a> </a>  
+          <a href='#'>More about me.</a>
           </p>
         </div>
 
@@ -52,6 +42,8 @@ function Home() {
         <img src={arrowOutline} className="arrow" alt="arrow" />
         </div>
 
+        </div>
+        
         <div className='text-container'>
           <p className='paragraph-text amikoBold'>
             RECENT WORKS
