@@ -7,6 +7,7 @@ import Mpr from './Mpr'
 import Expedia from './Expedia'
 import ComingSoon from './ComingSoon';
 import PersonalProjects from './PersonalProjects';
+import AboutMe from './AboutMe';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
     <Router >
       <Routes>
+        <Route path={`${process.env.PUBLIC_URL}/about-me`} element={<AboutMe />} exact />
         <Route path={`${process.env.PUBLIC_URL}/snack`} element={<Snack />} exact />
         <Route path={`${process.env.PUBLIC_URL}/barrtech-mechanical`} element={<Barr />} />
         <Route path={`${process.env.PUBLIC_URL}/mountain-park-resort`} element={<Mpr />} />
