@@ -73,24 +73,19 @@ function Expedia() {
           <p className='work-subtitle amikoBold'>DESIGN STAGES
           <br></br>
           <div className='center-container' style={{padding: "0"}}>
-            <div className='design-stage-outer'>
-              <div className='design-stage-menu'>
-                <button class="design-stage-item" onclick="openCity('London')">PREDESIGN</button>
-                <button class="design-stage-item" onclick="openCity('Paris')">EARLY DESIGN</button>
-                <button class="design-stage-item" onclick="openCity('Tokyo')">MID DESIGN</button>
-                <button class="design-stage-item" onclick="openCity('Tokyo')">LATE DESIGN</button>
-              </div>
-            <br></br>
-              <img src={pre} alt="predesign" className='circle'/>
-              <div className='design-stage-inner'>
-                <a className='work-paragraph-text amikoReg'>understand problem based on users' needs</a>
-                <br></br>
-                <a className='work-paragraph-text amikoReg'>observation & interviews</a>
-                <br></br>
-                <a className='work-paragraph-text amikoReg'>--> requirements</a>
-              </div>
+            <div className='design-stage-menu'>
+                <button class="design-stage-item" onclick="openStage('pre')">PRE-DESIGN</button>
+                <button class="design-stage-item" onclick="openStage('early')">EARLY DESIGN</button>
+                <button class="design-stage-item" onclick="openStage('mid')">MID DESIGN</button>
+                <button class="design-stage-item" onclick="openStage('late')">LATE DESIGN</button>
             </div>
-            <div className='design-stage-outer'>
+            <div id="pre" class="design-stage-outer">
+              <img src={pre} alt="predesign" className='circle'/>
+            </div>
+
+              
+              
+            {/* <div className='design-stage-outer'>
               <img src={early} alt="earlydesign" className='circle'/>
               <div className='design-stage-inner'>
                 <a className='work-paragraph-text amikoReg'>explore problems & contexts of use</a>
@@ -99,8 +94,8 @@ function Expedia() {
                 <br></br>
                 <a className='work-paragraph-text amikoReg'>--> design approach confirmed</a>
               </div>
-            </div>
-            <div className='design-stage-outer'>
+            </div> */}
+            {/* <div className='design-stage-outer'>
               <img src={mid} alt="mid" className='circle'/>
               <div className='design-stage-inner'>
                 <a className='work-paragraph-text amikoReg'>flesh out into med-fi prototype</a>
@@ -109,8 +104,8 @@ function Expedia() {
                 <br></br>
                 <a className='work-paragraph-text amikoReg'>--> reiterate & refine design</a>
               </div>
-            </div>
-            <div className='design-stage-outer'>
+            </div> */}
+            {/* <div className='design-stage-outer'>
               <img src={late} alt="late" className='circle'/>
               <div className='design-stage-inner'>
                 <a className='work-paragraph-text amikoReg'>turn design into a working hi-fi prototype</a>
@@ -119,7 +114,7 @@ function Expedia() {
                 <br></br>
                 <a className='work-paragraph-text amikoReg'>--> deploy to real users (next steps)</a>
               </div>
-            </div>
+            </div> */}
           </div>
           
           </p> 
@@ -131,30 +126,38 @@ function Expedia() {
         <div className='work-text-container'>
           <p className='work-subtitle amikoBold'>PRE-DESIGN
           <br></br>
+          <a className='work-paragraph-text amikoBold'> Goal
+          <br></br>
+          <a className='work-paragraph-text amikoReg'> Understand the problem based on <a className='highlightYellow'>users' needs, interests, abilities & fallibilities,</a> using 
+          evaluation methods like <a className='highlightYellow'>observations & interviews</a> to 
+          generate a <a className='highlightYellow'>list of requirements</a> for the redesign.</a>
+          </a>
+          <br></br>
+          <br></br>
           <a className='work-paragraph-text amikoBold'> Human Need & Central Tasks 
           <br></br>
-            <a className='amikoReg'>The human need is to book a vacation. 
-            The central tasks are to book a flight and book accommodations. </a>
+            <a className='amikoReg'>The human need is to <a className='highlightYellow'>book a vacation.</a> <br></br>
+            The central tasks are to <a className='highlightYellow'>book a flight and book accommodations.</a></a>
           </a>
           <br></br>          
           <br></br>
           <a className='work-paragraph-text amikoBold'> Evaluation Goals 
           <br></br>
-            <a className='amikoReg'>1. Determine whether using Expedia to book both flights and accommodations is more efficient than using separate interfaces for booking flights and accommodations. <br></br>
-            2. Determine how well Expedia supports users in finding flights and accommodations that meet their criteria.</a>
+            <a className='amikoReg'><a className='highlightYellow'>1.</a> Determine whether using Expedia to book both flights and accommodations is more efficient than using separate interfaces for booking flights and accommodations. <br></br>
+            <a className='highlightYellow'>2.</a> Determine how well Expedia supports users in finding flights and accommodations that meet their criteria.</a>
           </a>
           <br></br>          
           <br></br>
           <a className='work-paragraph-text amikoBold'> Participant Pool
           <br></br>
-            <a className='amikoReg'>10 university students (ages 18-24) were selected using convenience sampling. 
+            <a className='amikoReg'><a className='highlightYellow'>10 university students</a> (ages 18-24) were selected using convenience sampling. 
             They are diverse in terms of demographics/backgrounds. Students have worked with online platforms for school, so they possess at least a basic level of computer literacy (using the internet). This group will likely be the ones booking vacations now or in the future.</a>
           </a>
           <br></br>          
           <br></br>
           <a className='work-paragraph-text amikoBold'> Study Protocol Summary
           <br></br>
-            <a className='amikoReg'>Participants were given a consent form at least a day before asking if we can record their screen during the session. If consent was not provided, we took notes and filled out coding sheets in real-time. Participants were to complete a task that encapsulates every feature Expedia offers and book a specific trip. We recorded their screen during the task to capture their behavior/comments. After, we conducted a semi-structured interview to gain a better understanding of their experience during the task. The length of the entire session was ~1 hour (introduction, instruction, observation, and interview). 
+            <a className='amikoReg'>Participants were given a <a className='highlightYellow'>consent form</a> at least a day before asking if we can record their screen during the session. If consent was not provided, we took notes and filled out <a className='highlightYellow'>coding sheets</a> in real-time. Participants were to complete a task that encapsulates every feature Expedia offers and book a specific trip. We <a className='highlightYellow'>recorded their screen</a> during the task to capture their behavior/comments. After, we conducted a <a className='highlightYellow'>semi-structured interview</a> to gain a better understanding of their experience during the task. The length of the entire session was <a className='highlightYellow'>~1 hour</a> (introduction, instruction, observation, and interview). 
             <br></br><br></br>
             Subjective qualitative data was collected from watching their behavior and noting down quotes during the task. We used thematic analysis (affinity diagramming) and identified themes that emerged from commonly-observed behaviors / comments. This analysis helped us determine whether participants prefered using Expedia over other booking sites. The objective quantitative data collected were the filters chosen during the task, as the task considered each filter option. We counted the average number of filters chosen to determine the helpfulness of each option in supporting user tasks. We also compared the total time taken to book a trip using Expedia versus two separate interfaces to determine which one was more efficient. Also, we found the averages from the Likert scale for each interview question to determine how effective Expedia is in supporting the task of booking a trip.  </a>          </a>
           <br></br>          

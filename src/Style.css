@@ -61,6 +61,10 @@
   font-family: bungeeInline;
 }
 
+.highlightYellow {
+  background-color: #ffefc8;
+}
+
 .code .design .eat .sweat {
   background-color: none;
 }
@@ -400,11 +404,6 @@
   display: inline-block;
 }
 
-/* .design-stage-outer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} */
 .design-stage-menu {
   background-color: #FFC94C;
   color: white;
@@ -432,9 +431,17 @@
   background-color: #eebf51;
 }
 
-.design-stage-innter {
+.design-stage-outer {
   text-align: left;
   justify-content: left;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  position: relative;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }

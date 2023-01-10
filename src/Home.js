@@ -1,6 +1,7 @@
 import './Style.css'
 import arrowOutline from './assets/arrow-outline.png'
 import snack from './assets/snackBanner.png'
+import gu from './assets/ubcguBanner.png'
 import ncis from './assets/ncisBanner.png'
 import barrtech from './assets/barrtechBanner.png'
 import mpr from './assets/mprBanner.png'
@@ -50,6 +51,9 @@ function Home() {
           </p>
         </div>
         <div style={{alignItems: "center"}}>
+        <a href={`${process.env.PUBLIC_URL}/coming-soon`}>
+          <img src={gu} className="work-banner" alt="geeringup" />
+          </a>
           <a href={`${process.env.PUBLIC_URL}/snack`}>
           <img src={snack} className="work-banner" alt="snack" />
           </a>
