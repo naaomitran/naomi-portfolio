@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/naomi-portfolio/static/css/main.890e7914.css",
-    "main.js": "/naomi-portfolio/static/js/main.829f4e00.js",
+    "main.css": "/naomi-portfolio/static/css/main.c7cf4b1a.css",
+    "main.js": "/naomi-portfolio/static/js/main.a7ee7485.js",
     "static/js/787.c40b991c.chunk.js": "/naomi-portfolio/static/js/787.c40b991c.chunk.js",
     "static/media/website-update copy.mov": "/naomi-portfolio/static/media/website-update copy.14ca101a2cffad49b5d9.mov",
     "static/media/mprHeader.png": "/naomi-portfolio/static/media/mprHeader.e49d47de14522966ccef.png",
     "static/media/barrHeader.png": "/naomi-portfolio/static/media/barrHeader.c692c7e403dc98c60f57.png",
     "static/media/rr1.png": "/naomi-portfolio/static/media/rr1.80b88e2fac678d3ec8ce.png",
     "static/media/db1.png": "/naomi-portfolio/static/media/db1.61a90b695b2ed9411b9d.png",
+    "static/media/naomiGraduate.png": "/naomi-portfolio/static/media/naomiGraduate.581eb9e8eb11a1b2f0c0.png",
+    "static/media/naomiTravel.jpg": "/naomi-portfolio/static/media/naomiTravel.0f35e431d34e72e00517.jpg",
     "static/media/snackHeader.png": "/naomi-portfolio/static/media/snackHeader.1dec861ce3fdbc46cf61.png",
     "static/media/sg4.png": "/naomi-portfolio/static/media/sg4.25cad7f4df60cd030086.png",
     "static/media/sg5.png": "/naomi-portfolio/static/media/sg5.6dfdd64d3a9cc0063035.png",
     "static/media/sg3.png": "/naomi-portfolio/static/media/sg3.678b631a086c34a297de.png",
     "static/media/sg2.png": "/naomi-portfolio/static/media/sg2.32b853cdf0dd77ec3442.png",
     "static/media/sg1.png": "/naomi-portfolio/static/media/sg1.6c6fbd53233afd5d1335.png",
+    "static/media/naomiFoodie.jpg": "/naomi-portfolio/static/media/naomiFoodie.8512fa4eed7569359481.jpg",
     "static/media/snackBanner.png": "/naomi-portfolio/static/media/snackBanner.c367d24f67a214a4f790.png",
     "static/media/mprBanner.png": "/naomi-portfolio/static/media/mprBanner.1bca805972753af0fa1a.png",
     "static/media/rr3.png": "/naomi-portfolio/static/media/rr3.7b3a4896aeaeb70b52e7.png",
+    "static/media/naomiPro.jpg": "/naomi-portfolio/static/media/naomiPro.a1f64cf301731980b118.jpg",
     "static/media/country list.png": "/naomi-portfolio/static/media/country list.f3c51df15885dc40ee08.png",
     "static/media/db3.png": "/naomi-portfolio/static/media/db3.7313afd29dc2a550b2bf.png",
     "static/media/barrtechBanner.png": "/naomi-portfolio/static/media/barrtechBanner.2331c0a955ab0dc104ff.png",
@@ -77,12 +81,12 @@
     "static/media/hg12.png": "/naomi-portfolio/static/media/hg12.91b28b0c603b500834fa.png",
     "static/media/predesign.png": "/naomi-portfolio/static/media/predesign.cb33716ae5f0e1d59aab.png",
     "index.html": "/naomi-portfolio/index.html",
-    "main.890e7914.css.map": "/naomi-portfolio/static/css/main.890e7914.css.map",
-    "main.829f4e00.js.map": "/naomi-portfolio/static/js/main.829f4e00.js.map",
+    "main.c7cf4b1a.css.map": "/naomi-portfolio/static/css/main.c7cf4b1a.css.map",
+    "main.a7ee7485.js.map": "/naomi-portfolio/static/js/main.a7ee7485.js.map",
     "787.c40b991c.chunk.js.map": "/naomi-portfolio/static/js/787.c40b991c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.890e7914.css",
-    "static/js/main.829f4e00.js"
+    "static/css/main.c7cf4b1a.css",
+    "static/js/main.a7ee7485.js"
   ]
 }
