@@ -34,7 +34,7 @@ function Home() {
         <div className='text-container'>
             <p className='amikoReg paragraph-text'>
               <a className='work-title fatFace'>PROFESSIONALLY, </a>
-            I've interned as a software developer at a dating-app start up, interned as a UX / UI designer & researcher at an ocean crime tech solution start up,
+            I've interned as a software developer at a start up that helps find love for Gen-Z through a video-dating app, interned as a UX / UI designer & researcher at another start up that creates tech solutions to deter ocean crimes,
             freelanced on my own as a web designer / developer, and worked as a web developer for a non-profit organization that promotes STEM topics to kids.   
             </p>
         </div>
@@ -45,7 +45,7 @@ function Home() {
             And, I love building things from scratch, including crocheting, cooking, baking, creating websites, painting, writing, and any other forms that allows me to create something from nothing!
             I also enjoy the outdoors like hiking, biking, camping, and walking, though I do have an irrational fear for wasps and anything that stings, and if I see a sign 
             that warns me of coyote or bear sightings, I'm out of there. But since I'm from Winnipeg, mosquitoes and snow got nothing on me!
-            Of course, I find myself enjoying the indoors as well with a good book, coffee, or a great series to binge on Netflex!
+            Of course, I find myself enjoying the indoors as well with a good book, coffee, or a great series to binge on Netflix!
             </p>
         </div>
         <div className='text-container'>

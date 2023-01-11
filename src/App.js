@@ -8,6 +8,7 @@ import Expedia from './Expedia'
 import ComingSoon from './ComingSoon';
 import PersonalProjects from './PersonalProjects';
 import AboutMe from './AboutMe';
+import Ncis from './Ncis'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path={`${process.env.PUBLIC_URL}/snack`} element={<Snack />} exact />
         <Route path={`${process.env.PUBLIC_URL}/barrtech-mechanical`} element={<Barr />} />
         <Route path={`${process.env.PUBLIC_URL}/mountain-park-resort`} element={<Mpr />} />
+        <Route path={`${process.env.PUBLIC_URL}/ncis`} element={<Ncis />} />
         <Route path={`${process.env.PUBLIC_URL}/coming-soon`} element={<ComingSoon />} />
         <Route path={`${process.env.PUBLIC_URL}/expedia-redesign`} element={<Expedia />} />
         <Route path={`${process.env.PUBLIC_URL}/personal-projects`} element={<PersonalProjects />} />

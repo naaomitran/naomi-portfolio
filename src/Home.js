@@ -34,7 +34,7 @@ function Home() {
           I'm a designer and developer based in Vancouver, Canada with experience 
           in delivering end-to-end web designs and implementation for responsive web applications and interfaces. 
           I'm passionate about improving the ease and the looks of anything on the web that people can interact with. <a> </a>  
-          <a className='link' href={`${process.env.PUBLIC_URL}/about-me`}>More about me.</a>
+          <a className='link amikoBold' href={`${process.env.PUBLIC_URL}/about-me`}>More about me.</a>
           </p>
         </div>
 
@@ -55,7 +55,7 @@ function Home() {
           <a href={`${process.env.PUBLIC_URL}/snack`}>
           <img src={snack} className="work-banner" alt="snack" />
           </a>
-          <a href={`${process.env.PUBLIC_URL}/coming-soon`}>
+          <a href={`${process.env.PUBLIC_URL}/ncis`}>
           <img src={ncis} className="work-banner" alt="ncis" />
           </a>
           <a href={`${process.env.PUBLIC_URL}/barrtech-mechanical`}>

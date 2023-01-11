@@ -15,7 +15,7 @@ function Barr() {
     return (
       <div className="work-outer-container">
         <div style={{alignItems: "center"}}>
-          <img src={barr} alt="snack" className='work-header'/>
+          <img src={barr} alt="barr" className='work-header'/>
         </div>
         <header className='work-inner-container'>
           <div className='work-text-container'>
