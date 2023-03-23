@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/naomi-portfolio/static/css/main.c7cf4b1a.css",
-    "main.js": "/naomi-portfolio/static/js/main.396e17db.js",
+    "main.js": "/naomi-portfolio/static/js/main.fdd935cc.js",
     "static/js/787.c40b991c.chunk.js": "/naomi-portfolio/static/js/787.c40b991c.chunk.js",
     "static/media/website-update copy.mov": "/naomi-portfolio/static/media/website-update copy.14ca101a2cffad49b5d9.mov",
     "static/media/NCISpresentation.mp4": "/naomi-portfolio/static/media/NCISpresentation.a969d6248535a4477828.mp4",
@@ -54,6 +54,7 @@
     "static/media/hg4.png": "/naomi-portfolio/static/media/hg4.645f44972e9fb651f89b.png",
     "static/media/videobar.png": "/naomi-portfolio/static/media/videobar.d6ca33d7f250c937dc17.png",
     "static/media/snack-interest2.png": "/naomi-portfolio/static/media/snack-interest2.f37309bae90ab66e1d37.png",
+    "static/media/guHeader.png": "/naomi-portfolio/static/media/guHeader.208bf37cda0ddf94f4ba.png",
     "static/media/db4.png": "/naomi-portfolio/static/media/db4.74aeb7b0b64dc6376438.png",
     "static/media/expediaHeader.png": "/naomi-portfolio/static/media/expediaHeader.935384baf56b31214a05.png",
     "static/media/db5.png": "/naomi-portfolio/static/media/db5.65b32bf629ec15115e04.png",
@@ -76,20 +77,18 @@
     "static/media/AbrilFatface-Regular.ttf": "/naomi-portfolio/static/media/AbrilFatface-Regular.c2459f7f69cb5eb788d8.ttf",
     "static/media/vk2.png": "/naomi-portfolio/static/media/vk2.599c6f4f784e0d6ae796.png",
     "static/media/snack-interest1.png": "/naomi-portfolio/static/media/snack-interest1.12eaeb796359b78a469c.png",
+    "static/media/NaomiTranResume2022.pdf": "/naomi-portfolio/static/media/NaomiTranResume2022.16a4d6d353b579281459.pdf",
     "static/media/hashtag4.png": "/naomi-portfolio/static/media/hashtag4.31dcb73e4a1dfff2a5e1.png",
     "static/media/vk3.png": "/naomi-portfolio/static/media/vk3.47b14ce706e66a6e9c67.png",
-    "static/media/early.png": "/naomi-portfolio/static/media/early.a945cdd33f72c4e6f04d.png",
-    "static/media/mid.png": "/naomi-portfolio/static/media/mid.2fe3f5c1b4f7285bb720.png",
-    "static/media/late.png": "/naomi-portfolio/static/media/late.37038f42c03a20d7252e.png",
     "static/media/hg12.png": "/naomi-portfolio/static/media/hg12.91b28b0c603b500834fa.png",
     "static/media/predesign.png": "/naomi-portfolio/static/media/predesign.cb33716ae5f0e1d59aab.png",
     "index.html": "/naomi-portfolio/index.html",
     "main.c7cf4b1a.css.map": "/naomi-portfolio/static/css/main.c7cf4b1a.css.map",
-    "main.396e17db.js.map": "/naomi-portfolio/static/js/main.396e17db.js.map",
+    "main.fdd935cc.js.map": "/naomi-portfolio/static/js/main.fdd935cc.js.map",
     "787.c40b991c.chunk.js.map": "/naomi-portfolio/static/js/787.c40b991c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7cf4b1a.css",
-    "static/js/main.396e17db.js"
+    "static/js/main.fdd935cc.js"
   ]
 }
