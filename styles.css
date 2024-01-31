@@ -286,3 +286,33 @@
     font-size: 18px;
     line-height: 2em;
   }
+
+  @media screen and (max-width: 600px) {
+    .inner-container {
+      max-height: 100%;
+      position: relative;
+    }
+    
+    .title {
+      font-size: 100px;
+    }
+    .subtitle {
+      padding-top: 25px;
+      font-size: 50px;
+    }
+    
+    .left {
+      padding: 5px 0;
+    }
+    .right {
+      padding: 5px 0;
+    }
+
+    .desc {
+      font-size: 25px;
+    }
+
+    .grouped-details {
+      font-size: 15px;
+    }
+  }
