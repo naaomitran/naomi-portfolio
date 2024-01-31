@@ -1,10 +1,14 @@
-  @font-face {
+  /* @font-face {
     font-family: OpenSans;
     src: url(/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
   }
   @font-face {
     font-family: OSitalics;
     src: url(/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+  } */
+  @font-face {
+    font-family: OpenSans;
+    src: url(/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
   }
   
   .outer-container {
@@ -72,7 +76,8 @@
   }
   
   .italics {
-    font-family: OSitalics;
+    /* font-family: OSitalics; */
+    font-style: italic;
     margin-top: 0;
     font-weight: 400;
   }
