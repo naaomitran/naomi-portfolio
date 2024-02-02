@@ -114,7 +114,6 @@
     margin-top: 0;
     color: #835b0f;
     font-weight: 600;
-    font-size: 20px;
   }
   
   .left {
@@ -129,6 +128,7 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     align-items: baseline;
+    font-size: 20px;
     justify-content: space-between;
     text-decoration: none;
   }
