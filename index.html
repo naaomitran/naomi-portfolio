@@ -8,10 +8,16 @@
 </head>
 
 <body>
+	<div class="loader">
+		<div class="cup">
+			<div class="handle"></div>
+		</div>
+
+	</div>
 	<div class='outer-container'>
 		<header>
 		  <nav>
-			<a href='#home' class='active'>
+			<a href='#home'class='active'>
 				<span class="icon"><ion-icon name="planet-outline"></ion-icon></span>
 			  	<span class='text'>home</span>
 			</a>
@@ -31,6 +37,10 @@
 				<span class="icon"><ion-icon name="bug-outline"></ion-icon></span>
 			  	<span class='text'>archive</span>
 			</a>
+			<!-- <a href='#contact'>
+				<span class="icon"><ion-icon name="send"></ion-icon></ion-icon></span>
+			  	<span class='text'>contact</span>
+			</a> -->
 			<div class='indicator'></div>
 		  </nav>
 		</header>
@@ -93,7 +103,7 @@
 				<img src="projects/expedia.png" class="project-image"/>
 				<div>
 					<h3 class="project-title">expedia case study</h3>
-					<p class="project-desc">Expedia is a travel booking website that compiles both flights & accommodations, eliminating the hassle of using multiple platforms when planning your trip!
+					<p class="project-desc">A travel booking website that compiles both flights & accommodations, eliminating the hassle of using multiple platforms when planning your trip!
 						The focus was on enhancing Expedia's user experience by improving filtering usability. 
 						The objective was to refine Expedia's filtering system to offer users a more intuitive and efficient way to navigate through travel options.
 					</p>	
@@ -148,11 +158,31 @@
 				</div>
 			</a>
 		</section>
+		<section class="contact" style="margin-bottom: 250px;">
+			<h2 class='subtitle'>reach me</h2>  
+			<div class="three-grid">
+				<button class="social-container" onclick="location.href='mailto:naaomitran@gmail.com'">
+					<a class='details'>Email</a>
+				</button>
+				<button class="social-container" onclick="location.href='https://www.linkedin.com/in/naaomitran'">
+					<a class='details'>LinkedIn</a>
+				</button>
+				<button class="social-container" onclick="location.href='https://www.instagram.com/creamricecreates/'">
+					<a class='details'>Instagram</a>
+				</button>
+			</div>
+
+		</section>
   
 	  </div>
 
 	  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	  <script>
+		window.addEventListener("load", () => {
+			document.querySelector(".loader").classList.add("loader--hidden");
+		});
+	  </script>
 		  <script>
 			  let sec = document.querySelectorAll('section');
 			  let links = document.querySelectorAll('header nav a');
