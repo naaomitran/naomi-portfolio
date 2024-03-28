@@ -332,10 +332,13 @@
     text-decoration: none;
     color: black;
   }
-  .card:hover {
+  .card:hover, card:active, card:visited, card:focus {
     box-shadow: -15px 18px #835b0f;
     cursor: pointer;
     transition: 1s;
+    text-decoration:none;
+    color: black;
+
   }
   .card-set {
     display: grid;
