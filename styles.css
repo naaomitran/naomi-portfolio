@@ -108,7 +108,13 @@
     animation: slideUp 2s ease-in-out;
     color: #835b0f;
   }
-  
+  .read-more {
+    font-weight: 700;
+  }
+  .read-more:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+  }
   .details {
     padding: 20px 0;
     margin-top: 0;
@@ -323,6 +329,8 @@
     border-radius: 15px;
     align-items: center;
     justify-items: center;
+    text-decoration: none;
+    color: black;
   }
   .card:hover {
     box-shadow: -15px 18px #835b0f;
@@ -338,6 +346,8 @@
     align-items: center;
     justify-items: center;
     box-shadow: -15px 18px #e8cc99;
+    text-decoration: none;
+    color: black;
   }
   .project-image {
     max-width: 500px;

@@ -1,0 +1,142 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.outer-container {
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+.inner-container {
+    position: relative;
+    padding: 100px;
+}
+
+.back-btn {
+    position: display;
+    display: flex;
+    width: 100px;
+    padding: 15px;
+    margin: 25px;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: 550;
+    background-color: #e8f5ff;
+    border-radius: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000000;
+}
+.back-btn:hover {
+    box-shadow: -5px 8px #835b0f;
+    cursor: pointer;
+    transition: 1s;
+}
+
+h1 {
+    font-size: 100px;
+    font-family:'Franklin Gothic Medium';
+    margin-bottom: 50px;
+    margin-top: 0;
+    color: #000000;
+    
+}
+h2 {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 550;
+    line-height: 2;
+    margin: 0;
+    color: #000000;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 550;
+    line-height: 2;
+    margin: 0;
+    margin-top: 25px;
+    color: #000000;
+}
+
+h4 {
+    font-size: 75px;
+    font-family:'Franklin Gothic Medium';
+    margin-bottom: 25px;
+    margin-top: 0;
+    color: #000000;
+}
+
+p {
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 2;
+    margin: 0;
+}
+
+li {
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 2;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+}
+
+.card-column {
+    background-color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 1.5;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    border-radius: 15px;
+    justify-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.lofi-design {
+    max-width: 100%;
+}
+
+.table-contents {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 999;
+}
+
+.table-contents-container {
+    background-color: rgb(212, 246, 234);
+    margin: 0;
+    padding-left: 8%;
+}
+
+a {
+    font-size: 18px;
+    font-family: Arial;
+    color: black;
+    text-decoration: none;
+}
