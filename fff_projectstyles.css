@@ -132,6 +132,7 @@ li {
     align-items: center;
     color: #835b0f;
     text-decoration: none;
+    text-align: center;
 }
 
 .active {
