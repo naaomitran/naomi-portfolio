@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fff_projectstyles.css" />
+	<link rel="icon" href="saturn.png" type="image/icon type">
+	<title>Find Fit Friends — Naomi Tran</title>
+</head>
+<body>
+
+	<div class="outer-container">
+		<header>
+			<nav class="table-contents">
+				<a class="back-btn" href="index.html#archive">
+					<ion-icon name="arrow-back-outline"></ion-icon> back home
+				</a>
+				<a class='nav-item active' href='#find-fit-friends'>overview</a>
+				<a class='nav-item' href='#approach'>role &amp; approach</a>
+				<a class='nav-item' href='#task-examples'>user scenarios</a>
+				<a class='nav-item' href='#lo-fi-prototypes'>lo-fi prototypes</a>
+				<a class='nav-item' href='#experiment'>experiment</a>
+			</nav>
+		</header>
+
+		<section id='find-fit-friends' class="inner-container hero-section">
+			<p class="eyebrow">case study</p>
+			<h1 class="title">find fit friends</h1>
+			<p class="team-line">with Angel Bao, Will Oxtoby &amp; Gordon Wu</p>
+
+			<div class="stack">
+				<div class="stack-block">
+					<h3>problem</h3>
+					<p>
+						College makes it easy to meet people and stay active. Post-college, less proximity
+						and busier schedules make both harder — especially during the stressful transition
+						from studying into a full-time job.
+					</p>
+				</div>
+				<div class="stack-block">
+					<h3>solution</h3>
+					<p>
+						An app for finding friends with similar physical activity interests — working out,
+						spin class, walking, hiking, and more. You request to be friends, then see each
+						other's posts: photos, comments, and a schedule of when, where, and what's planned,
+						like a social platform built around getting active together.
+					</p>
+				</div>
+				<div class="stack-block">
+					<h3>design direction</h3>
+					<p class="direction-line">📱 dating app × social feed × calendar</p>
+					<p class="direction-line">👥 find friends to stay active and accountable with</p>
+					<p class="direction-line">🗓 make coordinating activities effortless</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="approach" class="inner-container" style="background-color: var(--pink-pale);">
+			<p class="eyebrow">how I worked</p>
+			<h2 class="subtitle">role &amp; approach</h2>
+			<ul class="approach-list">
+				<li>
+					<span class="approach-label">frame the problem</span>
+					Started from the gap itself — why staying active and staying connected gets harder
+					right after college — before touching any UI.
+				</li>
+				<li>
+					<span class="approach-label">ground it in real users</span>
+					Built out concrete scenarios (below) to stress-test whether the concept actually held
+					up for the people it was meant to serve.
+				</li>
+				<li>
+					<span class="approach-label">explore, then weigh trade-offs</span>
+					Designed two competing directions and evaluated each on pros and cons rather than
+					picking a favorite on instinct — see lo-fi prototypes.
+				</li>
+				<li>
+					<span class="approach-label">validate the assumption</span>
+					Ran an experiment to test the concept directly, and documented findings and
+					limitations honestly rather than just the parts that worked.
+				</li>
+			</ul>
+		</section>
+
+		<section id="task-examples" class="inner-container">
+			<p class="eyebrow">grounding the concept</p>
+			<h2 class="subtitle">user scenarios</h2>
+			<div class="grid-2">
+				<div class="card">
+					Sally has been in LA for a month as a software developer — her first job post-grad,
+					and the transition has been stressful. Now more settled, she wants to get active and is
+					eyeing a spin class, but doesn't know the area and doesn't want to go alone. She has no
+					friends nearby yet, and would love someone to join her weekly — ideally someone close by
+					so they could walk and explore the city together too. She's only free Tuesdays at 4PM or
+					Saturday mornings before noon.
+				</div>
+				<div class="card">
+					James and Hannah are new friends who both love tennis, and the Vancouver weather has
+					finally cleared up. They don't have each other's numbers, so they need another channel to
+					coordinate — and both dislike the usual back-and-forth of picking a time and place. Once
+					it's settled, they each add it to their own calendar: James uses iCal, Hannah uses Google
+					Calendar.
+				</div>
+			</div>
+		</section>
+
+		<section id="lo-fi-prototypes" class="inner-container" style="background-color: var(--yellow-pale);">
+			<p class="eyebrow">weighing the options</p>
+			<h2 class="subtitle">lo-fi prototypes</h2>
+			<div class="grid-2">
+				<div class="card-column">
+					<h3>design alternative 1</h3>
+					<p>
+						Inspired by the familiar dating-app swipe pattern, with messaging and a scrolling
+						feed modeled on standard social conventions.
+					</p>
+					<p class="pros-cons"><strong>pros:</strong> leans on patterns users already know</p>
+					<p class="pros-cons"><strong>cons:</strong> scheduling isn't intuitive yet, and profile
+						info reads as scattered — needs more design work</p>
+					<img src="projects/fff/design1_fff.png" class="lofi-design"/>
+				</div>
+				<div class="card-column">
+					<h3>design alternative 2</h3>
+					<p>
+						Inspired by BeReal/Instagram — a scrollable photo feed, a search function to find
+						people, and profiles that open into messaging. Schedule resembles a monthly calendar.
+					</p>
+					<p class="pros-cons"><strong>pros:</strong> more community-first — you can message
+						anyone after viewing their profile, no friend request required</p>
+					<p class="pros-cons"><strong>cons:</strong> the add/remove event buttons may go unused if
+						people expect to edit events straight from the date itself</p>
+					<img src="projects/fff/design2_fff.png" class="lofi-design"/>
+				</div>
+			</div>
+		</section>
+
+		<section id="experiment" class="inner-container">
+			<p class="eyebrow">testing the assumption</p>
+			<h2 class="subtitle">experiment</h2>
+			<p class="details">
+				Full write-up covering background, methods, findings, limitations, and future directions.
+			</p>
+			<div class="pdf-frame">
+				<object class="pdf"
+					data="projects/fff/NaomiTran-IndividualReportMSIV.pdf.pdf">
+				</object>
+			</div>
+			<a class="pdf-btn" href="projects/fff/NaomiTran-IndividualReportMSIV.pdf.pdf">read report</a>
+		</section>
+
+	</div>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script>
+		const sections = document.querySelectorAll('section');
+		const links = document.querySelectorAll('header nav a.nav-item');
+
+		window.addEventListener('scroll', () => {
+			const scrollPos = window.scrollY + window.innerHeight * 0.3;
+			sections.forEach(section => {
+				const top = section.offsetTop;
+				const height = section.offsetHeight;
+				const id = section.getAttribute('id');
+				if (scrollPos >= top && scrollPos < top + height) {
+					links.forEach(link => link.classList.remove('active'));
+					const match = document.querySelector(`header nav a.nav-item[href*='${id}']`);
+					if (match) match.classList.add('active');
+				}
+			});
+		});
+
+		const revealTargets = document.querySelectorAll('.card, .card-column, .stack-block');
+		revealTargets.forEach(el => el.classList.add('reveal'));
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('reveal--visible');
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.15 });
+
+		revealTargets.forEach(el => observer.observe(el));
+	</script>
+</body>
+</html>

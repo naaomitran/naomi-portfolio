@@ -1,0 +1,258 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.link, .link:visited {
+    color: #000000;
+    font-weight: 550;;
+}
+
+.white-blurb {
+    padding: 40px; 
+    background-color: white; 
+    border-radius: 25px;
+    margin-bottom: 50px;
+    box-shadow: -12px 18px #000f59;
+}
+
+.break {
+    width: 100%;
+    height: 5px;
+    background-color: #000f59 ;
+    margin: 25px 0;
+    border-radius: 100px;
+}
+
+
+.outer-container {
+    display: grid;
+}
+
+.inner-container {
+    position: relative;
+    padding: 100px;
+}
+
+.back-btn {
+    position: display;
+    display: flex;
+    width: 100px;
+    padding: 15px;
+    margin: 25px;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: 550;
+    border-radius: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    border: #fff 2px solid;
+}
+.back-btn:hover {
+    box-shadow: -5px 8px #fff;
+    cursor: pointer;
+    transition: 1s;
+}
+
+h1 {
+    font-size: 80px;
+    font-family:'Franklin Gothic Medium';
+    margin-bottom: 50px;
+    margin-top: 0;
+    color: #000000;
+    
+}
+h2 {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 550;
+    line-height: 2;
+    margin: 0;
+    color: #000000;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 550;
+    line-height: 2;
+    margin: 0;
+    color: #000000;
+}
+
+h4 {
+    font-size: 75px;
+    font-family:'Franklin Gothic Medium';
+    margin-bottom: 25px;
+    margin-top: 0;
+    color: #000000;
+}
+
+p {
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 2;
+    margin: 0;
+}
+
+li {
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 2;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+}
+
+.card-column {
+    background-color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 1.5;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    border-radius: 15px;
+    justify-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.lofi-design {
+    max-width: 100%;
+}
+
+.table-contents {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.nav-item {
+    padding: 3%;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.active {
+    text-decoration: underline #fff 5px;
+    font-weight: 550;
+}
+
+a.active .nav-item {
+    text-decoration: underline #fff 5px;
+    font-weight: 550;
+}
+
+/* .nav-item {
+    text-decoration: underline #835b0f 5px;
+    font-weight: 550;
+} */
+
+.table-contents-container {
+    background-color: #000f59;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    font-size: 18px;
+    font-family: Arial;
+    /* color: black; */
+    text-decoration: none;
+}
+
+.pdf {
+    width: 100%;
+    height: 500px;
+    padding-top: 25px;
+}
+
+.pdf-btn {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .inner-container {
+      max-height: 100%;
+      position: relative;
+    }
+    
+    h1 {
+      font-size: 75px;
+    }
+    h2 {
+      padding-top: 25px;
+      font-size: 25px;
+    }
+
+    h3 {
+        padding-top: 25px;
+      }
+
+    h4 {
+      font-size: 25px;
+    }
+
+    p, li, a {
+      font-size: 15px;
+    }
+
+    .back-btn {
+        font-size: 12px;
+    }
+
+    .pdf {
+        display: none;
+    }
+
+    .pdf-btn, .pdf-btn:visited {
+        position: display;
+        display: flex;
+        width: 100px;
+        padding: 15px;
+        font-size: 15px;
+        margin-top: 25px;
+        font-family: Arial;
+        font-weight: 550;
+        border-radius: 12px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #fff;
+        border: #fff 2px solid;
+    }
+    
+    .pdf-btn:hover {
+        box-shadow: -5px 8px #fff;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+  }

@@ -1,0 +1,523 @@
+/* ============================
+   Tokens
+   ============================ */
+:root {
+	--cream: #FFF8EC;
+	--cream-deep: #FFF1DA;
+	--pink: #F6B8CB;
+	--pink-deep: #EE8FAE;
+	--pink-pale: #FCE3EB;
+	--yellow: #F6C453;
+	--yellow-soft: #FCE29A;
+	--yellow-pale: #FDF2D5;
+	--blue-pale: #DCEBEE;
+	--brown: #5C3A21;
+	--brown-soft: #8B5E3C;
+	--brown-line: rgba(92, 58, 33, 0.18);
+
+	--font-display: 'Fraunces', serif;
+	--font-body: 'Poppins', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+	margin: 0;
+	background: var(--cream);
+	color: var(--brown);
+	font-family: var(--font-body);
+	overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ============================
+   Loader
+   ============================ */
+.loader {
+	position: fixed;
+	inset: 0;
+	background: var(--cream);
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.loader--hidden { opacity: 0; visibility: hidden; }
+.stamp-loader {
+	font-size: 2.5rem;
+	color: var(--pink-deep);
+	animation: spin 1.4s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ============================
+   Ambient blobs
+   ============================ */
+.blob {
+	position: fixed;
+	border-radius: 50%;
+	filter: blur(40px);
+	opacity: 0.5;
+	z-index: 0;
+	pointer-events: none;
+	transition: transform 0.2s ease-out;
+}
+.blob--one {
+	width: 380px; height: 380px;
+	background: var(--pink);
+	top: -120px; left: -100px;
+}
+.blob--two {
+	width: 300px; height: 300px;
+	background: var(--yellow-soft);
+	top: 40%; right: -120px;
+}
+.blob--three {
+	width: 260px; height: 260px;
+	background: var(--blue-pale);
+	bottom: -100px; left: 30%;
+}
+
+/* ============================
+   Layout
+   ============================ */
+.outer-container {
+	position: relative;
+	z-index: 1;
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+header {
+	position: sticky;
+	top: 16px;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 8px;
+}
+
+nav {
+	position: relative;
+	display: flex;
+	gap: 4px;
+	background: rgba(255, 248, 236, 0.85);
+	backdrop-filter: blur(8px);
+	border: 1px dashed var(--brown-line);
+	border-radius: 999px;
+	padding: 6px;
+	box-shadow: 0 6px 20px rgba(92, 58, 33, 0.08);
+}
+
+nav a {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 14px;
+	border-radius: 999px;
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: var(--brown-soft);
+	transition: color 0.25s ease, transform 0.25s ease;
+}
+
+nav a .text { display: none; }
+nav a .icon { font-size: 1.15rem; display: flex; }
+
+nav a:hover { transform: translateY(-2px); color: var(--brown); }
+
+nav a.active {
+	background: var(--pink);
+	color: var(--brown);
+}
+
+.inner-container {
+	min-height: 60vh;
+	padding: 90px 0 60px;
+}
+
+.eyebrow {
+	font-family: var(--font-body);
+	font-size: 0.75rem;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--brown-soft);
+	margin: 0 0 6px;
+}
+
+.subtitle {
+	font-family: var(--font-display);
+	font-size: 2rem;
+	font-weight: 600;
+	margin: 0 0 32px;
+	color: var(--brown);
+}
+
+.italics { font-style: italic; color: var(--brown-soft); margin: 0px; }
+
+/* ============================
+   Hero
+   ============================ */
+.hero {
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+.title {
+	font-family: var(--font-display);
+	font-style: italic;
+	font-weight: 600;
+	font-size: clamp(3rem, 10vw, 5.5rem);
+	margin: 0;
+	color: var(--brown);
+	line-height: 1;
+}
+
+.desc {
+	font-family: var(--font-display);
+	font-weight: 400;
+	font-size: 1.4rem;
+	color: var(--brown-soft);
+	margin: 10px 0 24px;
+}
+
+.details { font-size: 0.95rem; line-height: 1.7; max-width: 480px; }
+
+.link {
+	color: var(--pink-deep);
+	border-bottom: 1px dashed var(--pink-deep);
+	transition: color 0.2s ease;
+}
+.link:hover { color: var(--brown); border-color: var(--brown); }
+
+.stamp {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	width: 92px;
+	height: 92px;
+	border: 2px dashed var(--pink-deep);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transform: rotate(8deg);
+	animation: drift 6s ease-in-out infinite;
+}
+.stamp span {
+	font-family: var(--font-display);
+	font-size: 0.65rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	color: var(--pink-deep);
+	line-height: 1.3;
+}
+@keyframes drift {
+	0%, 100% { transform: rotate(8deg) translateY(0); }
+	50% { transform: rotate(-4deg) translateY(-6px); }
+}
+
+.scroll-cue {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	font-size: 1.4rem;
+	color: var(--brown-soft);
+	animation: bob 1.8s ease-in-out infinite;
+}
+@keyframes bob {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(6px); }
+}
+
+/* ============================
+   Skills marquee
+   ============================ */
+.marquee {
+	position: relative;
+	left: 50%;
+	margin-left: -50vw;
+	width: 100vw;
+	overflow: hidden;
+	background: var(--yellow-soft);
+	border-top: 1px dashed var(--brown-line);
+	border-bottom: 1px dashed var(--brown-line);
+	padding: 14px 0;
+}
+
+.marquee-track {
+	display: flex;
+	width: max-content;
+	animation: marquee-scroll 26s linear infinite;
+}
+
+.marquee-track:hover { animation-play-state: paused; }
+
+.marquee-set {
+	display: flex;
+	align-items: center;
+	flex: none;
+}
+
+.skill {
+	font-family: var(--font-body);
+	font-weight: 600;
+	font-size: 0.95rem;
+	color: var(--brown);
+	white-space: nowrap;
+	padding: 0 18px;
+}
+
+.marquee .star {
+	color: var(--pink-deep);
+	font-size: 0.9rem;
+}
+
+@keyframes marquee-scroll {
+	from { transform: translateX(0); }
+	to { transform: translateX(-50%); }
+}
+
+/* ============================
+   Current job spotlight
+   ============================ */
+.spotlight {
+	display: block;
+	background: linear-gradient(135deg, var(--pink-pale), var(--yellow-pale));
+	border: 1px dashed var(--pink-deep);
+	border-radius: 24px;
+	padding: 32px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
+}
+
+.spotlight:hover {
+	box-shadow: 0 16px 30px rgba(92, 58, 33, 0.12);
+	transform: translateY(-4px);
+}
+
+.spotlight-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 10px;
+	margin-bottom: 18px;
+}
+
+.spotlight-role {
+	font-family: var(--font-display);
+	font-size: 1.5rem;
+	margin: 0;
+	color: var(--brown);
+}
+
+.spotlight-badge {
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: var(--brown-soft);
+	border: 1px dashed var(--brown-line);
+	border-radius: 999px;
+	padding: 4px 12px;
+	white-space: nowrap;
+}
+
+.spotlight-project + .spotlight-project { margin-top: 22px; }
+
+.spotlight-project-name {
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	font-weight: 600;
+	color: var(--pink-deep);
+	margin: 0 0 10px;
+}
+
+.spotlight-list {
+	margin: 0;
+	padding-left: 20px;
+	list-style: none;
+}
+
+.spotlight-list li {
+	position: relative;
+	padding-left: 6px;
+	margin-bottom: 10px;
+	font-size: 0.92rem;
+	line-height: 1.6;
+	color: var(--brown);
+}
+
+.spotlight-list li::before {
+	content: '✺';
+	position: absolute;
+	left: -20px;
+	color: var(--pink-deep);
+	font-size: 0.75rem;
+}
+
+/* ============================
+   Work / education rows (postmark)
+   ============================ */
+.postmark-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 16px 18px;
+	margin-bottom: 10px;
+	border-radius: 16px;
+	border: 1px solid transparent;
+	opacity: 0;
+	transform: translateY(16px);
+	transition: background 0.25s ease, border-color 0.25s ease, transform 0.6s ease, opacity 0.6s ease;
+}
+
+.postmark-row:not(.postmark-row--static):hover {
+	background: var(--pink-pale);
+	border-color: var(--pink);
+	transform: translateX(4px);
+}
+
+.postmark-role { font-weight: 500; }
+
+.postmark-date {
+	font-family: var(--font-body);
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: var(--brown-soft);
+	white-space: nowrap;
+	border: 1px dashed var(--brown-line);
+	border-radius: 999px;
+	padding: 4px 12px;
+}
+
+/* ============================
+   Passion project cards
+   ============================ */
+.card {
+	--card-bg: var(--pink);
+	display: flex;
+	gap: 24px;
+	align-items: flex-start;
+	background: var(--card-bg);
+	border-radius: 24px;
+	padding: 28px;
+	margin-bottom: 24px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-6px) rotate(-0.5deg);
+	box-shadow: 0 16px 30px rgba(92, 58, 33, 0.12);
+}
+
+.card-glyph {
+	flex: none;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.55);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8rem;
+	color: var(--brown);
+}
+
+.project-title {
+	font-family: var(--font-display);
+	font-size: 1.2rem;
+	margin: 0 0 4px;
+	color: var(--brown);
+}
+
+.project-tag {
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--brown-soft);
+	margin: 0 0 10px;
+	font-weight: 600;
+}
+
+.project-desc {
+	font-size: 0.9rem;
+	line-height: 1.65;
+	margin: 0;
+	color: var(--brown);
+}
+
+/* ============================
+   Archive cards
+   ============================ */
+.card-set {
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+	border-radius: 20px;
+	padding: 20px;
+	margin-bottom: 20px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
+}
+
+.card-set:hover {
+	box-shadow: 0 12px 24px rgba(92, 58, 33, 0.1);
+	transform: translateY(-4px);
+}
+
+.project-image {
+	width: 120px;
+	height: 90px;
+	object-fit: cover;
+	border-radius: 12px;
+	flex: none;
+}
+
+.read-more {
+	font-size: 0.7rem;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--pink-deep);
+	margin: 10px 0 0;
+}
+
+/* ============================
+   Reveal on scroll
+   ============================ */
+.reveal { opacity: 0; transform: translateY(20px); }
+.reveal--visible { opacity: 1 !important; transform: translateY(0) !important; }
+
+/* ============================
+   Responsive
+   ============================ */
+@media (min-width: 640px) {
+	nav a .text { display: inline; }
+}
+
+@media (max-width: 640px) {
+	.card, .card-set { flex-direction: column; }
+	.project-image { width: 100%; height: 160px; }
+	.stamp { position: static; margin-bottom: 24px; transform: rotate(4deg); }
+}
+
+/* ============================
+   Reduced motion
+   ============================ */
+@media (prefers-reduced-motion: reduce) {
+	* { animation: none !important; transition: none !important; }
+}
