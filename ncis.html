@@ -1,219 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="ncis_projectstyles.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="ncis_projectstyles.css" />
 	<link rel="icon" href="saturn.png" type="image/icon type">
-    <title>NCIS</title>
+	<title>Grace / NCIS — Naomi Tran</title>
 </head>
 <body>
-    <div class="outer-container">
-        <div>
-            <header>
-                <nav class="table-contents">
-                    <div class="table-contents-container">
-                        <a class="back-btn" href="index.html#projects">back home</a>
-                        <a class='nav-item active' href='#ncis' >
-                            ncis
-                        </a>
-                        <a class='nav-item' href='#background'>
-                            background
-                        </a>
-                        <a class='nav-item' href='#research'>
-                            research
-                        </a>
-                        <a class='nav-item' href='#requirements'>
-                            requirements
-                        </a>
-                        <a class='nav-item' href='#experiment'>
-                            experiment
-                        </a>
-                        <a class='nav-item' href='#findings'>
-                            findings
-                        </a>
-                        <a class='nav-item' href='#design-recommendations'>
-                            designs
-                        </a>
-                        <a class='nav-item' href='#report'>
-                            report
-                        </a>
-            
-                    </nav>
-            </header>
-            
-        </div>
-        <section id='ncis' class="inner-container" style="padding-top: 200px">
-            <h3>CAPSTONE PROJECT</h3>
-            <h1>nautical crime investigation services</h1>
-            <h3>COMPANY OVERVIEW</h3>
-            <p>
-                Nautical Crime Investigation Services (NCIS) is a startup that specializes in leveraging cutting-edge technology to enhance national security and maritime defense. Using artificial intelligence and advanced tracking systems, NCIS conducts comprehensive risk assessments and detects criminal activities both at sea and on land. 
-                <br>⛴ <a class="link" href="https://www.ncis-tech.com/"> https://www.ncis-tech.com/</a><br>
-            
-            </p>
-            <div class="break"></div>
-            <h3>MY ROLE</h3>
-            <p>
-                👩🏻‍💻 Web Designer: designed website from ground up to establish company name. <br>
-                🔍 UX Researcher: identified problems in existing maritime domain awareness platforms and came up with solutions to implement in our own products<br>
-            </p>
-        </section>
-        <section id="background" class="inner-container" style="background-color: #badff9;">
-            <h4>background</h4>
-            <div class="white-blurb">
-                <p><span style="font-weight: 550">Maritime Domain Awareness (MDA):</span> Being aware of activities occurring in the marine domain that may have an impact on the security, safety, economy, and environment of the ocean.
-                    <br><span style="font-weight: 550">Goal:</span> Develop understanding and transparency of activities and threats at sea like people, infrastructure, cargo, vessels, and any other forms of transport on the waters and collect sufficient and accurate information of ongoing maritime activities to identify potential threats, make informed decisions, take appropriate action, share information with relevant partners, and respond to maritime activities by working with the government incorporating situational awareness to minimize resulting damages.
-                </p>
-            </div>
-            <div class="white-blurb">
-                <p><span style="font-weight: 550">Automatic Identification System (AIS):</span> Transmits a vessel’s position, showing its position to other vessels and organizations.
-                    <br><span style="font-weight: 550">Limitations:</span> Human analysis is needed to interpret AIS data, and it's normal and legal for vessels to turn off their AIS signal.
-                </p>
-            </div>
-            
 
-        </section>
-        <section id="research" class="inner-container">
-            <h4>research scope</h4>
-            <h3>GRACE (MDA PLATFORM)</h3>
-            <p>An AI powered risk assessment tool that uses machine learning to predict and identify suspicious activities and notify the appropriate organizations to intercept before it occurs and improve maritime security. Grace should be able to predict with high accuracy and certainty what and where suspicious activities occur and who is involved.</p>
-            <div class="break"></div>
-            <h3>PROJECT OVERVIEW</h3>
-            <p>We will identify the functional requirements and design requirements for the MDA platform, Grace, and recommend which design concepts and principles are essential to include for an MDA platform.</p>
-            <div class="break"></div>
-            <h3>RESEARCH GOAL & QUESTIONS</h3>
-            <p><span style="font-weight: 550">Goal: </span>To understand how existing MDA platforms are currently supporting their needs and how their user experience is like with these interfaces. </p>
-            <p><span style="font-weight: 550">Questions: </span></p>
-                <ol>
-                    <li>How helpful are the features / which features are helpful?</li>
-                    <li>What is displayed on the interface enough for effective and productive interpretation?</li>    
-                </ol>
-            <p>This will help us learn what features are necessary to include in Grace, provide insight on how we can improve user experience, and eliminate assumptions or misunderstanding in users’ context, needs, expectations, and abilities which can then minimize human error.</p>
-        
-        </section>
-        <section id="requirements" class="inner-container" style="background-color: #badff9;">
-            <h4>requirements</h4>
-            <br>
-            <div class="white-blurb">
-            <h3>Grace should be usable by many different groups with varying responsibilities and interests</h3>
-            <ul >
-                <li>Government (monitoring, control, and surveillance (MCS) and enforcement agencies): ensure fishing vessels are following regulations and pursue those that are participating in illegal activities</li>
-                <li>Fisheries officers: enforce the federal and provincial regulations for protecting fish, wildlife, and natural resources</li>
-                <li>MCS workers: deter illegal, unreported, and unregulated (IUU) activities relating to the sea </li>
-                <li>Maritime insurers: interested in the conditions of vessels and the safety of the people on the vessels, as they are liable for bodily injuries or deaths of a person, and the damage of the vessels</li>
-                <li>Seafood suppliers: interested in how their product is sourced</li>
-                <li>Maritime journalists and researchers: investigate and report news regarding the ocean, including ocean health, impacts of fishing and other ocean activities, and suspicious vessels and activities</li>
-                <li>NGOs and citizens: interested in a variety of topics, including seafood sustainability and suspicious activities at sea, and may make it their responsibility to report these findings to the respective authorities</li>
-                <li>Fishermen: aware of their location for transshipment and encounter purposes, or to prevent collisions</li>    
-            </ul>
-            <p>Grace should provide sufficient and effective features for each of these groups and their specific tasks to satisfy their functional requirement. </p>
+	<div class="outer-container">
+		<header>
+			<nav class="table-contents">
+				<a class="back-btn" href="index.html#archive">
+					<ion-icon name="arrow-back-outline"></ion-icon> back home
+				</a>
+				<a class='nav-item active' href='#ncis'>overview</a>
+				<a class='nav-item' href='#background'>background</a>
+				<a class='nav-item' href='#research'>research</a>
+				<a class='nav-item' href='#users'>users</a>
+				<a class='nav-item' href='#experiment'>experiment</a>
+				<a class='nav-item' href='#findings'>findings</a>
+				<a class='nav-item' href='#concepts'>concepts</a>
+				<a class='nav-item' href='#prototypes'>prototypes</a>
+				<a class='nav-item' href='#next-steps'>next steps</a>
+				<a class='nav-item' href='#thesis'>thesis</a>
+			</nav>
+		</header>
 
+		<section id='ncis' class="inner-container hero-section">
+			<p class="eyebrow">capstone project</p>
+			<h1 class="title">nautical crime investigation services</h1>
+
+			<div class="stack">
+				<div class="stack-block">
+					<h3>company overview</h3>
+					<p>
+						Nautical Crime Investigation Services (NCIS) is a startup that specializes in
+						leveraging cutting-edge technology to enhance national security and maritime
+						defense. Using artificial intelligence and advanced tracking systems, NCIS conducts
+						comprehensive risk assessments and detects criminal activities both at sea and on
+						land.
+						<br/>⛴ <a class="link" href="https://www.ncis-tech.com/">ncis-tech.com</a>
+					</p>
+				</div>
+				<div class="stack-block">
+					<h3>my role</h3>
+					<p class="direction-line">👩🏻‍💻 Web Designer — designed the company website from the ground up to establish the brand</p>
+					<p class="direction-line">🔍 UX Researcher — identified problems in existing maritime domain awareness platforms and proposed solutions to implement in our own product</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="background" class="inner-container section--relative">
+			<div class="section-blob section-blob--blue" aria-hidden="true"></div>
+			<p class="eyebrow">setting the scene</p>
+			<h2 class="subtitle">background</h2>
+			<div class="grid-2">
+				<div class="card">
+					<p><strong>Maritime Domain Awareness (MDA):</strong> being aware of activities occurring
+						in the marine domain that may impact the security, safety, economy, and environment
+						of the ocean.</p>
+					<p><strong>Goal:</strong> develop understanding and transparency of activities and
+						threats at sea — people, infrastructure, cargo, vessels, and other forms of
+						transport — and collect sufficient, accurate information on ongoing maritime
+						activity to identify threats, make informed decisions, take appropriate action,
+						share information with partners, and respond while minimizing resulting damage.</p>
+				</div>
+				<div class="card">
+					<p><strong>Automatic Identification System (AIS):</strong> transmits a vessel's
+						position, showing it to other vessels and organizations.</p>
+					<p><strong>Limitations:</strong> human analysis is still needed to interpret AIS data,
+						and it's normal and legal for vessels to turn off their AIS signal entirely.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="research" class="inner-container">
+			<p class="eyebrow">research scope</p>
+			<h2 class="subtitle">GRACE (MDA platform)</h2>
+			<p class="details">
+				An AI-powered risk assessment tool that uses machine learning to predict and identify
+				suspicious activities and notify the appropriate organizations to intercept before they
+				occur, improving maritime security. Grace should predict, with high accuracy and
+				certainty, what and where suspicious activities occur and who is involved.
+			</p>
+
+			<div class="stack-block">
+				<h3>project overview</h3>
+				<p>
+					We identified the functional and design requirements for Grace, and recommended which
+					design concepts and principles were essential to include for an MDA platform.
+				</p>
+			</div>
+
+			<div class="stack-block">
+				<h3>research goal &amp; questions</h3>
+				<p><strong>Goal:</strong> understand how existing MDA platforms currently support users'
+					needs and what their experience is like with these interfaces.</p>
+				<p><strong>Questions:</strong></p>
+				<ol class="numbered-list">
+					<li>How helpful are the features / which features are helpful?</li>
+					<li>Is what's displayed on the interface enough for effective, productive interpretation?</li>
+				</ol>
+				<p>
+					This helped us learn what features are necessary to include in Grace, gave insight
+					into improving user experience, and eliminated assumptions or misunderstandings about
+					users' context, needs, expectations, and abilities, which in turn minimizes human error.
+				</p>
+			</div>
+		</section>
+
+		<section id="users" class="inner-container section--relative">
+			<div class="section-blob section-blob--pink" aria-hidden="true"></div>
+			<p class="eyebrow">who this is for</p>
+			<h2 class="subtitle">users</h2>
+			<div class="card">
+				<h3>Grace should be usable by many different groups with varying responsibilities and interests</h3>
+				<ul class="bullet-list">
+					<li><strong>Government (MCS &amp; enforcement agencies):</strong> ensure fishing vessels follow regulations and pursue those engaged in illegal activity</li>
+					<li><strong>Fisheries officers:</strong> enforce federal and provincial regulations protecting fish, wildlife, and natural resources</li>
+					<li><strong>MCS workers:</strong> deter illegal, unreported, and unregulated (IUU) activity relating to the sea</li>
+					<li><strong>Maritime insurers:</strong> interested in vessel condition and crew safety, given liability for injuries, deaths, and vessel damage</li>
+					<li><strong>Seafood suppliers:</strong> interested in how their product is sourced</li>
+					<li><strong>Maritime journalists &amp; researchers:</strong> investigate and report on ocean health, fishing impacts, and suspicious activity</li>
+					<li><strong>NGOs &amp; citizens:</strong> interested in seafood sustainability and suspicious activity, sometimes reporting findings to authorities themselves</li>
+					<li><strong>Fishermen:</strong> aware of their location for transshipment, encounters, or collision avoidance</li>
+				</ul>
+				<p>Grace should provide sufficient, effective features for each group's specific tasks to satisfy their functional requirements.</p>
+			</div>
+			<div class="card">
+				<h3>geographic</h3>
+				<p>
+					Grace aims to succeed in underdeveloped regions, like the sub-region of Africa.
+					Interface design depends heavily on cultural differences, since different cultures face
+					different challenges and opportunities that affect how people perceive and interact
+					with each other and with systems like this one.
+				</p>
+				<p>
+					The design must incorporate user behaviours and values from these regions and prioritize
+					relatively universal features applicable to all end users, while still meeting
+					functional requirements and providing a good user experience against their design
+					requirements.
+				</p>
+			</div>
+		</section>
+
+		<section id="experiment" class="inner-container">
+			<p class="eyebrow">testing the assumptions</p>
+			<h2 class="subtitle">experiment</h2>
+            <div class="mid-container" style="background-color: var(--pink-pale);">
+                <p class="details"><strong>Human need:</strong> bring maritime domain awareness to help detect and deter crimes.</p>
+                <p class="details"><strong>Central task:</strong> detect suspicious activity accurately and efficiently.</p>
             </div>
-            <div class="white-blurb">
-                <h3>Geographic</h3>
-                <p>Grace aims to be successful in underdeveloped countries, like the subregion of Africa. The interface design depends largely on cultural differences, as different cultures will have different challenges and opportunities, affecting how people perceive and interact with each other and other entities, like computer systems.</p>
-                <br>
-                <p>The design must incorporate user behaviours and values from these following areas and prioritize creating relatively universal features that are applicable to all end users, while maintaining its functional requirements and providing a good user experience to satisfy their design requirements.</p>
-            </div>
-        </section>
-        <section id="experiment" class="inner-container">
-            <h4>experiment</h4>
-            <p><span style="font-weight: 550">Human need: </span>To bring maritime domain awareness and detect and deter crimes. </p>
-            <p><span style="font-weight: 550">Central tasks: </span>To detect suspicious activity accurately and efficiently.</p>
-            <div class="break"></div>
-            <h3>GLOBAL FISHING WATCH (GFW) VS SKYLIGHT (SK) (COMPETITIVE REVIEW)</h3>
-            <p>This review was to familiarize myself with these MDA platforms to identify what worked and didn't work. I explored GFW's map directly and watched
-                Skylight's tutorial videos. Strengths and weaknesses were noted down and then categorized to UX/UI specific or algorithmic qualities since we will only
-                be focusing on UX/UI aspects. This data was used to create evaluation goals for our usability test: 
-            </p>
-            <ol>
-                <li>How helpful is the map / interface for finding vessels? </li>
-                <li>How helpful are the filters in supporting their tasks?</li>
-                <li>Is the available information displayed on the interface sufficient for effective interpretation?</li>
-            </ol>
-            <div class="break"></div>
-            <h3>USABILITY TEST (OBSERVATION & INTERVIEW)</h3>
-            <p>
-                We used this method to identify where we could improve MDA platforms in terms of usability and user satisfaction. Participants used GFW and SK 
-                and completed the following tasks: 
-            </p>
-            <ol>
-                <li>Can you find Long Wang Chyun NO37 in 2021 and tell me a bit about what you know about the vessel from the interface? </li>
-                <li>Can you find a Spanish trawler fishing in a prohibited zone?</li>
-                <li>Can you identify an encounter between 2 vessels and tell me what each of their flags are?</li>
-                <li>Beside fishing related activities, can you identify any other crimes from this interface?</li>
-            </ol>
-            <p>
-                An interview followed the osbervation and consisted of 9 open-ended questions (see Appendix in report).
-            </p>
-        </section>
-        <section id="findings" class="inner-container" style="background-color: #badff9;">
-            <h4>findings</h4>
-            <br>
-            <div class="white-blurb">
-                <h3>Global Fishing Watch Qualitative Analysis</h3>
-                <p>Strengths</p>
-                <ul >
-                    <li>Cues help with interpretation, learnability, and usability</li>
-                    <li>Encourages discoverability / felt comfortable playing around with interface</li>
-                    <li>Helpful features offered like the <span style="font-style: italic;">Search for vessels</span> function</li>   
-                </ul>
-                <p>Weaknesses</p>
-                <ul>
-                    <li>Slow and heavy / overwhelming interface</li>
-                    <li>Unclear cues and poor feedback results in misinterpretation</li>
-                    <li>Confusion around using some of the features suggests it's not an intuitive interface</li>
-                    <li>Users wished there was a feature that could inform them of more specific activities</li>
-                </ul>
-            </div>
-            <div class="white-blurb">
-                <h3>Differences between SK & GFW</h3>
-                <ul >
-                    <li>Visual hierarchy: SK's features are located in a toolbar vs GFW's features are in a side panel; SK has dropdown tabs vs GFW has a scrollable panel</li>
-                    <li>Visual cues: SK complements their text with icons to indicate it's a button</li>
-                    <li>Function/workflow: SK waits for users’ queries before loading anything on the interface, while GFW defaults to show everything they have collected from AIS and VMS</li>   
-                </ul>
-            </div>
-            <div class="white-blurb">
-                <h3>Quantitative Results & Analysis</h3>
-                <p>See report for full results but overall, participants completed tasks quicker using Skylight. We cannot determine which MDA delivered more accurate results due to our small sample size.</p>
-            </div>
-        </section>
-        <section id="design-recommendations" class="inner-container">
-            <h4>designs</h4>
-            <p>To improve the overall usability and user experience, we determined the requirements needed for Grace:</p>
-            <ol>
-                <li>Functional: detect / monitor vessels and predict suspicious activity with high certainty</li>
-                <li>Usability: easily learned and retained</li>
-                <li>User characteristics: globally understood</li>
-            </ol>
-            <div class="break"></div>
-            <h3>PROTOTYPES</h3>
-            
-        </section>
-    </div>
-        
-    </div>
-    <script>
-        let sec = document.querySelectorAll('section');
-        let links = document.querySelectorAll('header nav a');
-  
-        window.onscroll = () => {
-          sec.forEach(section => {
-            let top = window.scrollY; 
-            let offset = section.offsetTop;
-            let height = section.offsetHeight;
-            let id = section.getAttribute('id');
-  
-            if (top >= offset && top < offset + height){
-              links.forEach(link => {
-                link.classList.remove('active');
-                document.querySelector('header nav a[href*='+id+']').classList.add('active');
-              })
-            }
-          })
-        }
-</script>
+
+			<div class="stack-block">
+				<h3>Global Fishing Watch (GFW) vs. Skylight (SK) — competitive review</h3>
+				<p>
+					This review familiarized me with existing MDA platforms to identify what worked and
+					what didn't. I explored GFW's map directly and watched Skylight's tutorial videos,
+					noting strengths and weaknesses and categorizing them as UX/UI-specific or algorithmic,
+					since we were only focusing on UX/UI. This informed the evaluation goals for our
+					usability test:
+				</p>
+				<ol class="numbered-list">
+					<li>How helpful is the map / interface for finding vessels?</li>
+					<li>How helpful are the filters in supporting their tasks?</li>
+					<li>Is the information displayed sufficient for effective interpretation?</li>
+				</ol>
+			</div>
+
+			<div class="stack-block">
+				<h3>usability test — observation &amp; interview</h3>
+				<p>
+					Used to identify where we could improve MDA platforms on usability and user
+					satisfaction. Participants used GFW and SK to complete the following tasks:
+				</p>
+				<ol class="numbered-list">
+					<li>Find Long Wang Chyun NO37 in 2021 and describe what you learn about the vessel from the interface.</li>
+					<li>Find a Spanish trawler fishing in a prohibited zone.</li>
+					<li>Identify an encounter between two vessels and name each of their flags.</li>
+					<li>Beside fishing-related activity, identify any other crime visible on the interface.</li>
+				</ol>
+				<p>An interview followed each observation, consisting of 9 open-ended questions (see appendix in report).</p>
+			</div>
+		</section>
+
+		<section id="findings" class="inner-container section--relative">
+			<div class="section-blob section-blob--yellow" aria-hidden="true"></div>
+			<p class="eyebrow">what we learned</p>
+			<h2 class="subtitle">findings</h2>
+
+			<div class="card">
+				<h3>Global Fishing Watch — qualitative analysis</h3>
+				<p class="findings-label">strengths</p>
+				<ul class="bullet-list">
+					<li>Cues help with interpretation, learnability, and usability</li>
+					<li>Encourages discoverability — participants felt comfortable exploring the interface</li>
+					<li>Helpful features, like the <em>search for vessels</em> function</li>
+				</ul>
+				<p class="findings-label">weaknesses</p>
+				<ul class="bullet-list">
+					<li>Slow and heavy, sometimes overwhelming interface</li>
+					<li>Unclear cues and poor feedback lead to misinterpretation</li>
+					<li>Confusion around some features suggests the interface isn't fully intuitive</li>
+					<li>Users wished for a feature that surfaced more specific activity</li>
+				</ul>
+			</div>
+
+			<div class="card">
+				<h3>Skylight vs Global Fishing Watch</h3>
+				<ul class="bullet-list">
+					<li><strong>Visual hierarchy:</strong> SK's features live in a toolbar with dropdown tabs; GFW's live in a scrollable side panel</li>
+					<li><strong>Visual cues:</strong> SK pairs text with icons to signal that something is a button</li>
+					<li><strong>Function/workflow:</strong> SK waits for a user's query before loading anything, while GFW defaults to showing everything collected from AIS and VMS</li>
+				</ul>
+			</div>
+
+			<div class="card">
+				<h3>quantitative results &amp; analysis</h3>
+				<p>
+					Time-to-complete doesn't capture accuracy on its own, so these numbers are paired with
+					the qualitative behaviour above rather than read in isolation. Overall, participants
+					completed tasks noticeably faster on Skylight. However, with only one SK user observed
+					(account access was a recruiting barrier), this is a directional signal, not a
+					conclusion.
+				</p>
+				<div class="table-wrap">
+					<table class="data-table">
+						<thead><tr><th>Self-rated metric (out of 5)</th><th>Average</th></tr></thead>
+						<tbody>
+							<tr><td>Familiarity (1 = not familiar, 5 = familiar)</td><td>2.75</td></tr>
+							<tr><td>Navigation difficulty (1 = easy, 5 = hard)</td><td>2</td></tr>
+							<tr><td>Interpretation difficulty (1 = easy, 5 = hard)</td><td>2.44</td></tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="table-wrap">
+					<table class="data-table">
+						<thead><tr><th>Average time to complete (s)</th><th>GFW</th><th>Skylight</th></tr></thead>
+						<tbody>
+							<tr><td>Task 1: find a named vessel</td><td>87</td><td>10</td></tr>
+							<tr><td>Task 2: find a vessel in a prohibited zone</td><td>440</td><td>120</td></tr>
+							<tr><td>Task 3: identify an encounter &amp; flags</td><td>340</td><td>120</td></tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<p>
+					GFW users had the most difficulty on task 2 with the average time being over 7 minutes and
+					several participants passing 10, and everyone noted assumptions they'd made along the
+					way. That's a strong signal that the interface doesn't give users enough to work with
+					when the judgment call is subjective rather than a straightforward lookup.
+				</p>
+				<p>
+					Taken together, this pointed to three requirements for Grace:
+				</p>
+				<ol class="numbered-list">
+					<li><strong>Functional:</strong> detect and monitor vessels, predicting suspicious activity with high certainty</li>
+					<li><strong>Usability:</strong> easily learned and retained</li>
+					<li><strong>User characteristics:</strong> globally understood</li>
+				</ol>
+			</div>
+		</section>
+
+		<section id="concepts" class="inner-container section--relative">
+			<div class="section-blob section-blob--pink" aria-hidden="true"></div>
+			<p class="eyebrow">where this points</p>
+			<h2 class="subtitle">design concepts</h2>
+			<p class="details">
+				To meet the requirements above, we grounded every design recommendation in three concepts:
+			</p>
+			<div class="card">
+				<h3>affordances</h3>
+				<p>
+					What the interface actually lets a user do. Grace needs to afford everything GFW and SK
+					already do — detecting and monitoring vessels, reporting vessel info, identifying
+					transshipments and encounters, filtering. Its differentiator is predicting suspicious
+					activity with high certainty, closing the gap between raw data and human interpretation.
+				</p>
+			</div>
+			<div class="card">
+				<h3>signifiers</h3>
+				<p>
+					The perceivable cues that point users toward those affordances. Grace surfaces a lot of
+					functionality, which risks overwhelming any one user who only needs a couple of
+					features. Signifiers need to be visible without demanding exploration — and, since
+					end users span very different regions and backgrounds, they need to be understood
+					across cultures, not just by one.
+				</p>
+			</div>
+			<div class="card">
+				<h3>feedback</h3>
+				<p>
+					How the system communicates the result of an action, so users understand the
+					consequence and adjust — whether that's continuing their workflow or catching and
+					fixing a mistake. It should be immediate and specific enough that users build an
+					accurate mental model of the system the first few times they use it.
+				</p>
+			</div>
+		</section>
+
+		<section id="prototypes" class="inner-container">
+			<p class="eyebrow">putting it into practice</p>
+			<h2 class="subtitle">lo-fi prototypes</h2>
+			<p class="details">
+				Three low-fidelity prototypes, built on GFW's existing interface, to see these concepts
+				applied to specific problems we observed.
+			</p>
+
+			<div class="stack-block">
+				<h3>colour-coded suspicious activity</h3>
+				<p>
+					New users have no way of knowing Grace can detect suspicious activity at all, thus, this
+					affordance needs a visible signifier. Vessels predicted to be involved in something
+					suspicious get a bright coloured dot (drug trafficking in red, illegal fishing in
+					purple, illegal entry in yellow, transshipment violations in green, multiple activities
+					in orange), which stands out against a map of plain black dots. Clicking one opens a
+					pop-up with the vessel's info and the flagged activity highlighted in the same colour which provides
+					immediate feedback that reinforces what the colour meant in the first place.
+				</p>
+                <div class="media-block">
+                    <img src="projects/ncis/colourcode.png" class="ui-shot" alt="Prototype showing a Global Fishing Watch map with colour-coded dots for different suspicious activities, and a pop-up modal with vessel and activity details"/>
+
+                </div>
+			</div>
+
+			<div class="stack-block">
+				<h3>a search bar users can actually rely on</h3>
+				<p>
+					In testing, users typed country abbreviations into GFW's vessel search expecting to
+					filter by flag. Instead, GFW searched for those letters in vessel names. Grace's search
+					should support the properties users actually expect: vessel name, flag, or other
+					identifiers. Keeping it sticky to the top of the interface leans on transfer knowledge
+					from search engines, shopping sites, and streaming platforms which is the first place most
+					users look, and one that matches a top-to-bottom reading pattern across cultures.
+				</p>
+				<img src="projects/ncis/searchbar.png" class="ui-shot" alt="Prototype showing a sticky search bar with vessel name, country flag, and MMSI number options"/>
+			</div>
+
+			<div class="stack-block">
+				<h3>a menu bar that signposts itself</h3>
+				<p>
+					Every user struggled to locate GFW's filter feature as the icon alone wasn't enough of a
+					signifier. Pairing icon with text addresses that directly, and matters more here than
+					usual, since not every icon reads the same way across cultures. Dropdowns keep the
+					interface from feeling overwhelming, and checkboxes give immediate feedback. A running count
+					next to "Filter" keeps system status visible even when the dropdown is closed.
+				</p>
+				<div>
+					<img src="projects/ncis/filter.png" class="ui-shot" alt="Prototype menu bar with the Filter dropdown open, showing vessel properties, activities, zone, and specific criteria checkboxes"/>
+					<img src="projects/ncis/sus-activities-tools.png" class="ui-shot" alt="Prototype menu bar with the Suspicious Activities Tools dropdown open, showing illegal activity detection and boundary and jurisdiction zone options"/>
+				</div>
+			</div>
+
+			<div class="stack-block">
+				<h3>summary</h3>
+				<p>
+					Grace surfaces a lot of information, so it needs to be organized around how people
+					approach an interface and how they'll know what happened after they act on it.
+					Affordances fulfill the functional requirement; signifiers support learnability and
+					retention; and how we design both feedback and signifiers determines whether the
+					interface is globally understood, not just understood by the team that built it.
+				</p>
+			</div>
+		</section>
+
+		<section id="next-steps" class="inner-container section--relative">
+			<div class="section-blob section-blob--yellow" aria-hidden="true"></div>
+			<p class="eyebrow">what's left</p>
+			<h2 class="subtitle">limitations &amp; next steps</h2>
+
+			<div class="card">
+				<h3>limitations</h3>
+				<ul class="bullet-list">
+					<li>Time and resourcing made it hard to schedule more international participants as coordinating across time zones and unreliable internet access was a real constraint</li>
+					<li>Skylight required an account, which narrowed who we could recruit; the one SK session we did get came from an internal stakeholder referral</li>
+					<li>We didn't ask enough about participants' cultural context up front, which would have sharpened the design recommendations for the mid-design stage</li>
+				</ul>
+			</div>
+
+			<div class="card">
+				<h3>future directions</h3>
+				<p>
+					These lo-fi prototypes are intentionally "throw-away" (meant to generate ideas, not
+					ship as-is). The recommended path forward:
+				</p>
+				<ul class="bullet-list">
+					<li>Prioritize recruiting users based in Africa and the Middle East, matching Grace's target regions more closely than this round did</li>
+					<li>Run cognitive walkthroughs on the lo-fi prototypes, iterating until they hold up, then A/B test with end users to see which directions actually perform better and why</li>
+					<li>Refine into med-fi prototypes, test with usability sessions and heuristic evaluations from maritime experts, then refine again into hi-fi based on that feedback</li>
+					<li>Take the hi-fi prototype into a functional beta, ready for field testing with real end users</li>
+				</ul>
+			</div>
+
+		</section>
+
+        <section id="thesis" class="inner-container">
+			<p class="eyebrow">deeper dive</p>
+			<h2 class="subtitle">thesis</h2>
+			<p class="details">
+				The full thesis, including the research process, findings, limitations, and future directions.
+			</p>
+			<div class="pdf-frame">
+				<object class="pdf"
+					data="projects/ncis/NCIS-report.pdf">
+				</object>
+			</div>
+			<a class="pdf-btn" href="projects/ncis/NCIS-report.pdf">read report</a>
+		</section>
+
+	</div>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script>
+		const sections = document.querySelectorAll('section');
+		const links = document.querySelectorAll('header nav a.nav-item');
+
+		window.addEventListener('scroll', () => {
+			const scrollPos = window.scrollY + window.innerHeight * 0.3;
+			sections.forEach(section => {
+				const top = section.offsetTop;
+				const height = section.offsetHeight;
+				const id = section.getAttribute('id');
+				if (scrollPos >= top && scrollPos < top + height) {
+					links.forEach(link => link.classList.remove('active'));
+					const match = document.querySelector(`header nav a.nav-item[href*='${id}']`);
+					if (match) match.classList.add('active');
+				}
+			});
+		});
+
+		const revealTargets = document.querySelectorAll('.card, .stack-block, .ui-shot');
+		revealTargets.forEach(el => el.classList.add('reveal'));
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('reveal--visible');
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.15 });
+
+		revealTargets.forEach(el => observer.observe(el));
+	</script>
 </body>
 </html>

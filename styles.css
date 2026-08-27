@@ -496,6 +496,25 @@ nav a.active {
 	margin: 10px 0 0;
 }
 
+.pdf-btn {
+	display: inline-block;
+	padding: 10px 22px;
+	width: 135px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 999px;
+	background: var(--pink-deep);
+	color: var(--cream);
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	transition: transform 0.2s ease;
+}
+
+.pdf-btn:hover { transform: translateY(-2px); }
+
 /* ============================
    Reveal on scroll
    ============================ */
@@ -521,3 +540,5 @@ nav a.active {
 @media (prefers-reduced-motion: reduce) {
 	* { animation: none !important; transition: none !important; }
 }
+
+
