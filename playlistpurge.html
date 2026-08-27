@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="purge_projectstyles.css" />
+	<link rel="icon" href="saturn.png" type="image/icon type">
+	<title>Playlist Purge — Naomi Tran</title>
+</head>
+<body>
+
+	<div class="outer-container">
+		<header>
+			<nav class="table-contents">
+				<a class="back-btn" href="index.html#projects">
+					<ion-icon name="arrow-back-outline"></ion-icon> back home
+				</a>
+				<a class='nav-item active' href='#overview'>overview</a>
+				<a class='nav-item' href='#problem'>problem</a>
+				<a class='nav-item' href='#approach'>role &amp; approach</a>
+				<a class='nav-item' href='#fix'>the fix</a>
+				<a class='nav-item' href='#alternatives'>alternatives</a>
+				<a class='nav-item' href='#impact'>impact</a>
+			</nav>
+		</header>
+
+		<section id='overview' class="inner-container hero-section"  style="background-color: #E3EED6;">
+			<p class="eyebrow">product concept</p>
+			<h1 class="title">playlist purge</h1>
+			<p class="team-line">solo project — spotted the friction, designed the fix</p>
+			<p class="details">
+				A small UX fix for something that kept bugging me every time I cleaned up a playlist:
+				removing multiple songs meant repeating the exact same hover → menu → remove sequence,
+				one song at a time.
+			</p>
+		</section>
+
+		<section id="problem" class="inner-container section--relative">
+			<div class="section-blob section-blob--pink" aria-hidden="true"></div>
+			<p class="eyebrow">the friction</p>
+			<h2 class="subtitle">problem</h2>
+			<p class="details">
+				For the longest time, I had no idea there was even a way to remove multiple songs from a
+				Spotify playlist at once. Turns out there kind of is: on web and desktop, holding
+				<strong>Ctrl</strong> (or <strong>Shift</strong>) while clicking lets you select more than
+				one song before removing them. But there's no actual button or visual cue that tells you
+				this is possible, and it doesn't work at all on mobile. I found that to be a pretty confusing
+				user experience. The capability exists, but nothing in the interface suggests it does. Instead,
+				the UI suggests that I would have to click on "..." to open up more options, and then manually 
+				delete each song one at a time.
+			</p>
+
+			<div class="media-block">
+				<div class="shot-row">
+					<img src="projects/spotify/spotify_current-pic.png" class="ui-shot" alt="Current Spotify playlist context menu, showing single-song remove option"/>
+					<img src="projects/spotify/spotify_current-mobile.png" class="ui-shot" alt="Current Spotify playlist context menu, showing single-song remove option"/>
+				</div>
+				<img src="projects/spotify/spotify_current-workflow.png" class="flow-shot" alt="Current workflow diagram: remove songs one at a time, looping back for each additional song"/>
+			</div>
+		</section>
+
+		<section id="approach" class="inner-container" style="background-color: var(--pink-pale);">
+			<p class="eyebrow">how I worked</p>
+			<h2 class="subtitle">role &amp; approach</h2>
+			<ul class="approach-list">
+				<li>
+					<span class="approach-label">notice the friction</span>
+					This wasn't just a hypothetical problem. This was a real problem I encountered,
+					hitting the same repeated motion often enough that it was clearly worth fixing, not just living with.
+				</li>
+				<li>
+					<span class="approach-label">quantify it</span>
+					Reframed it as an efficiency problem: N songs to remove currently means N full click
+					sequences, when it could be one pass regardless of how many songs are selected.
+				</li>
+				<li>
+					<span class="approach-label">weigh the obvious alternative</span>
+					Considered swipe-to-delete early on, but ruled it out. It changes the gesture, not the
+					bottleneck. You'd still be processing songs one at a time; the real fix has to be batch
+					removal, not a faster single removal. And it had to make sense on both desktop and mobile. 
+				</li>
+				<li>
+					<span class="approach-label">design the fix</span>
+					Rather than invent a whole new interaction, I gave the existing capability an actual and familiar
+					UI: a visible way to select multiple songs and a real button to remove them (mobile
+					included), instead of a keyboard shortcut nobody's expected to discover. 
+				</li>
+			</ul>
+		</section>
+
+		<section id="fix" class="inner-container section--relative">
+			<div class="section-blob section-blob--yellow" aria-hidden="true"></div>
+			<p class="eyebrow">the fix</p>
+			<h2 class="subtitle">new workflow</h2>
+			<p class="details">
+				Instead of a hidden keyboard shortcut, multi-select gets an actual visible affordance
+				and "remove from this playlist" moves to the main menu, where it acts on every checked
+				song at once. This works the same way on mobile, which the current Ctrl/Shift trick doesn't.
+				And, this is a familiar workflow that other platforms use. For example, the <Strong>Select</Strong>
+				button when selecting photos to delete in your Apple photos. 
+			</p>
+
+			<div class="media-block">
+				<p class="team-line">desktop</p>
+				<img src="projects/spotify/spotify_new-1.png" class="ui-shot" alt="New Spotify UI concept, showing Select mode with multiple songs checked and bulk remove in the main menu"/>
+				<img src="projects/spotify/spotify_new-2.png" class="ui-shot" alt="New Spotify UI concept, showing Select mode with multiple songs checked and bulk remove in the main menu"/>
+				<br></br>
+				<p class="team-line">mobile</p>
+				<img src="projects/spotify/spotify_new-pic-mobile.png" class="ui-shot" alt="New Spotify UI concept, showing Select mode with multiple songs checked and bulk remove in the main menu"/>
+				<img src="projects/spotify/spotify_new-workflow.png" class="flow-shot" style="padding: 100px 20px" alt="New workflow diagram: select multiple songs, then remove them all in one action"/>
+			</div>
+		</section>
+
+		<section id="alternatives" class="inner-container section--relative" style="background-color: var(--yellow-pale);">
+			<div class="section-blob section-blob--pink" aria-hidden="true"></div>
+			<p class="eyebrow">what else could've worked</p>
+			<h2 class="subtitle">other directions considered</h2>
+			<p class="details">
+				The visible select + bulk-remove button was the most direct fix, but it wasn't the only
+				option on the table. Here are a few other options that could be future add-ons:
+			</p>
+			<ul class="approach-list">
+				<li>
+					<span class="approach-label">trash icon on selection</span>
+					Once songs are checked, a trash icon appears right next to the checkmarks, so removal is
+					one tap instead of a trip to the main menu. This is probably the fastest version of this fix, but
+					it also makes accidental bulk deletes easier which is exactly why it pairs well with
+					undo, below.
+				</li>
+				<li>
+					<span class="approach-label">undo</span>
+					A toast after removal ("5 songs removed — Undo") that briefly lets you reverse it. Doesn't
+					solve the core problem on its own, but it's the safety net that makes a faster,
+					lower-friction delete action feel safe to ship.
+				</li>
+				<li>
+					<span class="approach-label">smart cleanup suggestions</span>
+					A proactive tool that flags likely candidates such as duplicates, tracks you tend to skip, etc. and
+					lets you bulk-remove from that list instead of hunting manually. This would be more powerful and complex, but a much
+					bigger feature than a UI fix.
+				</li>
+				<li>
+					<span class="approach-label">a one-time discoverability nudge</span>
+					The lowest-effort option: a tooltip the first time you hover a song ("Tip: hold Ctrl to
+					select multiple"). Doesn't touch the UI at all, just teaches the shortcut that already
+					secretly exists.
+				</li>
+			</ul>
+			<p class="details">
+				Nobody should need to know a hidden shortcut so I landed on the visible select + bulk-remove button because it solves the actual problem 
+				without introducing new risk like accidental bulk deletes. Trash-icon + undo would likely be the stronger v2 once the core interaction is
+				validated. 
+			</p>
+		</section>
+
+		<section id="impact" class="inner-container" >
+			<p class="eyebrow">why it matters</p>
+			<h2 class="subtitle">impact</h2>
+			<p class="details">
+				This turns playlist cleanup from a repeated, linear task into a single batch action. The
+				more songs you're removing, the more time it saves. It's a small interaction change, but
+				it's exactly the kind of annoying thing that adds up across a lot of playlist edits, and a good
+				example of a fix that's easy to overlook precisely because the underlying capability
+				already technically exists. It just needed a better UI!
+			</p>
+		</section>
+
+	</div>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script>
+		const sections = document.querySelectorAll('section');
+		const links = document.querySelectorAll('header nav a.nav-item');
+
+		window.addEventListener('scroll', () => {
+			const scrollPos = window.scrollY + window.innerHeight * 0.3;
+			sections.forEach(section => {
+				const top = section.offsetTop;
+				const height = section.offsetHeight;
+				const id = section.getAttribute('id');
+				if (scrollPos >= top && scrollPos < top + height) {
+					links.forEach(link => link.classList.remove('active'));
+					const match = document.querySelector(`header nav a.nav-item[href*='${id}']`);
+					if (match) match.classList.add('active');
+				}
+			});
+		});
+
+		const revealTargets = document.querySelectorAll('.ui-shot, .flow-shot, .approach-list li');
+		revealTargets.forEach(el => el.classList.add('reveal'));
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('reveal--visible');
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.15 });
+
+		revealTargets.forEach(el => observer.observe(el));
+	</script>
+</body>
+</html>
