@@ -189,7 +189,7 @@ nav a.active {
 	margin: 10px 0 24px;
 }
 
-.details { font-size: 0.95rem; line-height: 1.7; max-width: 480px; }
+.details { font-size: 0.95rem; line-height: 1.7; }
 
 .link {
 	color: var(--pink-deep);
