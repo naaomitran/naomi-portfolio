@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="expedia_projectstyles.css" />
+	<link rel="icon" href="saturn.png" type="image/icon type">
+	<title>Expedia Case Study — Naomi Tran</title>
+</head>
+<body>
+
+	<div class="outer-container">
+		<header>
+			<nav class="table-contents">
+				<a class="back-btn" href="index.html#archive">
+					<ion-icon name="arrow-back-outline"></ion-icon> back home
+				</a>
+				<a class='nav-item active' href='#overview'>overview</a>
+				<a class='nav-item' href='#user-need'>user need</a>
+				<a class='nav-item' href='#approach'>approach</a>
+				<a class='nav-item' href='#method'>method</a>
+				<a class='nav-item' href='#findings'>findings</a>
+				<a class='nav-item' href='#recommendations'>recommendations</a>
+				<a class='nav-item' href='#critique'>critique</a>
+			</nav>
+		</header>
+
+		<section id='overview' class="inner-container hero-section">
+			<p class="eyebrow">team project — team Guava</p>
+			<h1 class="title">expedia case study</h1>
+			<p class="team-line">with Will Oxtoby, Andrew Chang, Adam Wan, Christina Oh &amp; Ceci Yang</p>
+			<p class="details">
+				A travel booking redesign focused on one specific pain point: filtering accommodations on
+				Expedia. Flights and stays already live on one platform — the goal was making the filtering
+				workflow itself faster to learn and faster to use, then proving it with real usability data.
+			</p>
+			<div class="stack-block">
+				<h3>evaluation goals</h3>
+				<ul class="bullet-list">
+					<li>Will users complete tasks at least as efficiently as on the original interface?</li>
+					<li>Will users find specific filters more quickly?</li>
+					<li>Can users learn the interface relatively quickly?</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="user-need" class="inner-container section--relative">
+			<div class="section-blob section-blob--pink" aria-hidden="true"></div>
+			<p class="eyebrow">where it starts</p>
+			<h2 class="subtitle">user need</h2>
+			<p class="details">
+				Before touching the interface, we mapped the actual task this redesign needed to support:
+				someone planning a trip, researching flights and a place to stay, comparing options against
+				their own criteria, and checking out — all the friction points a booking flow needs to get
+				right long before "filters" enters the picture.
+			</p>
+            <div class="media-block">
+				<div class="shot-row">
+                    <img src="projects/expedia/storyboard.png" class="ui-shot" alt="Storyboard showing a person planning a Hawaii trip, searching for flights and accommodations, filtering by their criteria, adding to cart, and checking out"/>
+				</div>
+			</div>
+		</section>
+
+		<section id="approach" class="inner-container">
+			<p class="eyebrow">what we changed</p>
+			<h2 class="subtitle">design approach</h2>
+			<p class="details">
+				We scoped the redesign to the accommodations filtering workflow specifically, after finding
+				it lacking on two fronts: efficiency and visibility of system status.
+			</p>
+			<div class="card">
+				<h3>filters, in an overlay instead of a side panel</h3>
+				<p>
+					The original interface crams a large number of filters into a narrow side panel, forcing
+					heavy scrolling just to browse what's available. Moving them into an overlay gives the
+					filters room to breathe — fitting in a few scrolls instead of many, and making the whole
+					set easier to scan.
+				</p>
+			</div>
+			<div class="card">
+				<h3>an "applied filters" panel</h3>
+				<p>
+					The original gave no clear read on what was currently applied. We added a dedicated
+					panel that lists active filters and shows a running count, so system status is visible
+					without having to reopen the filter menu to check.
+				</p>
+			</div>
+			<div class="card">
+				<h3>an explicit "apply filters" button</h3>
+				<p>
+					Rather than re-querying results the instant a filter is toggled, users select everything
+					they want first, then apply it in one action. This gives users more control and avoids
+					refreshing results on every single click.
+				</p>
+			</div>
+		</section>
+
+		<section id="method" class="inner-container section--relative">
+			<div class="section-blob section-blob--yellow" aria-hidden="true"></div>
+			<p class="eyebrow">how we tested it</p>
+			<h2 class="subtitle">method</h2>
+			<p class="details">
+				6 university students (ages 18–24), recruited by convenience sampling — a group with basic
+				computer literacy and likely prior experience with booking platforms. Each completed the
+				same task on our med-fi prototype, observed directly, followed by a semi-structured
+				interview to capture their experience in their own words.
+			</p>
+			<div class="stack-block">
+				<h3>the task</h3>
+				<ol class="numbered-list">
+					<li>Find the filter button</li>
+					<li>Set it to Pet-Friendly</li>
+					<li>Price per night between $200–$500</li>
+					<li>At least a 4-star rating</li>
+					<li>Fully Refundable</li>
+					<li>Located in Pearl Harbor</li>
+					<li>Has an elevator</li>
+					<li>Apply the filters</li>
+					<li>Remove the Pet-Friendly filter</li>
+					<li>Remove all filters</li>
+				</ol>
+			</div>
+
+			<div class="video-block">
+				<video controls class="ui-shot">
+					<source src="projects/expedia/lofi_video.mp4" type="video/mp4">
+					Your browser doesn't support embedded video — download it directly instead.
+				</video>
+				<p class="video-caption">Lo-fi prototype walkthrough</p>
+			</div>
+
+			<div class="video-block">
+				<div class="video-wrap ui-shot">
+					<iframe src="https://www.youtube.com/embed/VurDzqjPTA0" title="Med-fi prototype walkthrough" allowfullscreen loading="lazy"></iframe>
+				</div>
+				<p class="video-caption">Med-fi prototype walkthrough</p>
+			</div>
+		</section>
+
+		<section id="findings" class="inner-container">
+			<p class="eyebrow">what we learned</p>
+			<h2 class="subtitle">findings</h2>
+
+			<div class="card">
+				<h3>grouping everything in one place read as simple</h3>
+				<p>
+					The original interface scattered filtering controls across several buttons and areas.
+					Consolidating them into a single filter modal made the next step obvious — where to go
+					and what to do — instead of leaving users to piece it together.
+				</p>
+			</div>
+			<div class="card">
+				<h3>filters were genuinely faster to find</h3>
+				<p>
+					Users liked having every filter in one place, clearly labeled and grouped by category
+					(amenities, star rating, and so on). One participant said they didn't have to put in much
+					effort at all to find what they needed — and that showed up directly in completion time.
+				</p>
+			</div>
+			<div class="card">
+				<h3>inputs were intuitive, except the price slider</h3>
+				<p>
+					Buttons and sliders were rated easy to learn and use at first sight — with one exception.
+					Several users found the price-range slider hard to land on an exact number, and said a
+					text input would have been easier than dragging for precision.
+				</p>
+			</div>
+			<div class="card">
+				<h3>one path through the task felt constricting</h3>
+				<p>
+					Because the prototype only supported one way to complete each step, users occasionally
+					hit a wall. One participant instinctively tried to clear all filters from the top-right
+					filter button — but that only worked from a separate "clear filters" control in the
+					sidebar. A small mismatch, but a real one between what people expected and what the
+					prototype allowed.
+				</p>
+			</div>
+
+			<div class="card">
+				<h3>quantitative results</h3>
+				<div class="stat-row">
+					<div class="stat-block">
+						<span class="stat-number">~3 min</span>
+						<span class="stat-label">average time to complete the full task</span>
+					</div>
+				</div>
+				<div class="table-wrap">
+					<table class="data-table">
+						<thead><tr><th>Statement (scale of 1–5)</th><th>Average</th></tr></thead>
+						<tbody>
+							<tr><td>Interface was easy to navigate</td><td>4.3</td></tr>
+							<tr><td>Easy to book accommodation matching criteria</td><td>4.8</td></tr>
+							<tr><td>Prior booking-site experience helped learning</td><td>4.8</td></tr>
+							<tr><td>Had trouble finding at least one filter</td><td>3.0</td></tr>
+							<tr><td>Felt easier than the original Expedia</td><td>4.2</td></tr>
+							<tr><td>Feedback from actions matched expectations</td><td>4.2</td></tr>
+							<tr><td>Always knew what to do next</td><td>4.5</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section id="recommendations" class="inner-container section--relative">
+			<div class="section-blob section-blob--pink" aria-hidden="true"></div>
+			<p class="eyebrow">where this points</p>
+			<h2 class="subtitle">conclusions &amp; recommendations</h2>
+			<p class="details">
+				Across both the qualitative themes and the quantitative scores, users consistently preferred
+				the redesign to the original — the filtering feature was more findable, the workflow felt
+				more organized, and nobody asked for help navigating it, which we read as a sign the design
+				was intuitive rather than just familiar.
+			</p>
+			<div class="card">
+				<h3>what's next</h3>
+				<p>
+					The prototype was built with a vertical scope — deep on the filtering feature
+					specifically, rather than broad across the whole booking flow. That means every input
+					element still needs to be made fully functional, which would also solve the "one path
+					only" constraint users ran into. The core direction — an overlay, an applied-filters
+					panel, and an explicit apply action — held up well enough to build on.
+				</p>
+			</div>
+		</section>
+
+		<section id="critique" class="inner-container">
+			<p class="eyebrow">what I'd do differently</p>
+			<h2 class="subtitle">critique of process</h2>
+			<div class="card">
+				<p>
+					We started with two lo-fi prototypes and merged the strongest ideas from each after a
+					cognitive walkthrough, then tested the result with real users. In hindsight, our lo-fi
+					prototypes were more polished than they needed to be for testing simple ideas — they
+					required very little change to become the med-fi version, which suggests we spent time
+					there that would have paid off more in the med-fi stage instead.
+				</p>
+				<p>
+					We also recorded every session, which let us revisit them to catch critical incidents we
+					missed live — worth doing again. For next time, a short script introducing the study
+					up front would streamline the session and make evaluations run more smoothly overall.
+				</p>
+			</div>
+			<a class="pdf-btn" href="projects/expedia/FINAL REPORT GUAVA.pdf" target="_blank" rel="noopener">read the full report</a>
+		</section>
+
+	</div>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script>
+		const sections = document.querySelectorAll('section');
+		const links = document.querySelectorAll('header nav a.nav-item');
+
+		window.addEventListener('scroll', () => {
+			const scrollPos = window.scrollY + window.innerHeight * 0.3;
+			sections.forEach(section => {
+				const top = section.offsetTop;
+				const height = section.offsetHeight;
+				const id = section.getAttribute('id');
+				if (scrollPos >= top && scrollPos < top + height) {
+					links.forEach(link => link.classList.remove('active'));
+					const match = document.querySelector(`header nav a.nav-item[href*='${id}']`);
+					if (match) match.classList.add('active');
+				}
+			});
+		});
+
+		const revealTargets = document.querySelectorAll('.card, .stack-block, .storyboard-shot, .video-block');
+		revealTargets.forEach(el => el.classList.add('reveal'));
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('reveal--visible');
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.15 });
+
+		revealTargets.forEach(el => observer.observe(el));
+	</script>
+</body>
+</html>
